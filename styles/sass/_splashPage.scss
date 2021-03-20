@@ -1,0 +1,21 @@
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.splashPage {
+  width: 70%;
+  height: 50vh;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  border: 5px solid darkslategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+span {
+  margin: 0 20px;
+}
