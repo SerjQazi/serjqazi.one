@@ -1,0 +1,34 @@
+body {
+  font-family: $lato;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: #DBF0EF;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+  // border: 1px solid red;
+}
+
+h2 {
+  font-family: $josefinSlab;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: right;
+}
+
+.footer {
+  font-family: $josefinSlab;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 15px 50px; 
+}

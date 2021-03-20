@@ -222,6 +222,11 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -236,7 +241,101 @@ html {
   overflow: hidden;
 }
 
+.headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 8%;
+}
+
 h1 {
-  color: blue;
-  font-size: 8rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-size: 6rem;
+  margin: 40px 0 20px;
+}
+
+h3 {
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  background-color: #DBF0EF;
+}
+
+.wrapper {
+  max-width: 1600px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-size: 4rem;
+}
+
+li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: right;
+}
+
+.footer {
+  font-family: "Josefin Slab", serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 15px 50px;
+}
+
+.sectionContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.splashPage {
+  width: 70%;
+  height: 50vh;
+  border-radius: 50px;
+  background-color: whitesmoke;
+  border: 5px solid darkslategray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
+}
+
+span {
+  margin: 0 20px;
 }

@@ -1,6 +1,11 @@
-@import 'setup';
+@import "setup";
+@import "header";
+@import "main";
+@import 'splashPage'
 
-h1 {
-  color: blue;
-  font-size: 8rem;
-}
+//todo: Header Font
+//? font-family: 'Josefin Slab', serif;
+
+//todo: Body Font
+//? font-family: 'Lato', sans-serif;
+
