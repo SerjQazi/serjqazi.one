@@ -255,7 +255,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 8%;
+  position: relative;
 }
 
 h1 {
@@ -275,12 +275,14 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  background-color: #DBF0EF;
+  background-color: #dbf0ef;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
 }
 
 .wrapper {
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1400px;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -295,14 +297,14 @@ li {
 }
 
 footer {
+  display: block;
   text-align: right;
 }
 
-.footer {
+footer h3 {
   font-family: "Josefin Slab", serif;
   font-weight: 500;
-  font-size: 2rem;
-  margin: 15px 50px;
+  font-size: 2.2rem;
 }
 
 .sectionContainer {
@@ -315,8 +317,8 @@ footer {
 }
 
 .splashPage {
-  width: 70%;
-  height: 50vh;
+  width: 100%;
+  min-height: calc(100vh - 310px);
   border-radius: 50px;
   background-color: whitesmoke;
   border: 5px solid darkslategray;
@@ -333,9 +335,72 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 50px 0;
+  margin: 25px 0;
 }
 
 span {
   margin: 0 20px;
+}
+
+.bodyDark {
+  background-color: #292c35;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  -webkit-transform: translateX(24px);
+          transform: translateX(24px);
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color: #111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50px;
+  position: relative;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.ball {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.darkModeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.fa-moon {
+  color: #f1c40f;
+}
+
+.fa-sun {
+  color: #f39c12;
 }

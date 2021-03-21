@@ -2,12 +2,13 @@ body {
   font-family: $lato;
   font-weight: 400;
   font-size: 2rem;
-  background-color: #DBF0EF;
+  background-color: #dbf0ef;
+  transition: background 0.2s linear;
 }
 
 .wrapper {
-  max-width: 1600px;
-  width: 80%;
+  max-width: 1400px;
+  width: 90%;
   margin: 0 auto;
   // border: 1px solid red;
 }
@@ -23,12 +24,11 @@ li {
 }
 
 footer {
+  display: block;
   text-align: right;
-}
-
-.footer {
-  font-family: $josefinSlab;
-  font-weight: 500;
-  font-size: 2rem;
-  margin: 15px 50px; 
+    h3 {
+      font-family: $josefinSlab;
+      font-weight: 500;
+      font-size: 2.2rem;
+    }
 }
