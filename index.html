@@ -14,7 +14,9 @@
       rel="stylesheet"
     />
 
-    <script src="https://kit.fontawesome.com/419f914d10.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
   </head>
   <body>
@@ -23,15 +25,19 @@
       <div class="wrapper">
         <div class="headerContainer">
           <h1>serj qazi portfolio</h1>
-          <h3>under construction...</h3>
-          <div class="darkModeBtn">
+          <h3>front-end web devepoler</h3>
+          
+          <form class="darkModeBtn">
             <input type="checkbox" class="checkbox" id="checkbox">
+
             <label for="checkbox" class="label">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
+              <i class="far fa-moon"></i>
+              <i class="far fa-sun"></i>
+
               <div class="ball"></div>
             </label>
-          </div>
+          
+          </form>
         </div>
 
 
@@ -42,7 +48,93 @@
     <div class="wrapper">
       <main>
         <div class="sectionContainer">
-          <section class="splashPage">
+
+          <div class="folderContainer">
+            <section class="aboutSection">
+              <div class="profileImgContainer">
+                <img class="profilePic" src="./assets/myPic.jpg" alt="">
+              </div>
+              <div class="profileIntro">
+                <h2>about me</h2>
+                <p>I'm am web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee I challenge myself everyday to master the tools and concepts of web-development.</p>
+                <p>I am passitonate about creating impactful web application using React & JavaScript. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.</p>
+                <div class="skipButton">
+                  <i class="fas fa-angle-double-down"></i>
+                </div>
+              </div>
+            </section> <!--end of about me section--> 
+
+            <section class="projects">
+              <div class="reactProjects">
+                <h2>react projects</h2>
+              </div>
+              
+              <div class="projectContainerOne">
+                <div class="projectImg">
+                </div>
+                <div class="projectDescription">
+                  <h4>robo trivia</h4>
+                  <p>Solo or Multiplayer trivia game</p>
+                  <p>API to generate questions & multiple choice answers</p>
+                  <p>API to assign avatars to usernames</p>
+                  <p>Firebase to keep user data and score</p>
+                </div>
+              </div> <!--end of projectContainer-->
+              
+              <div class="projectContainerTwo">
+                <div class="projectImg">
+                </div>
+                <div class="projectDescription">
+                  <h4>find my beer</h4>
+                  <p>A way to find all the breweries in your state</p>
+                  <p>API to generate a list of breweries</p>
+                  <p>Font of card shows name and address</p>
+                  <p>Back of card shows brewery type, contact info and website</p>
+                </div>
+              </div> <!--end of projectContainer-->
+              
+              <div class="projectContainerThree">
+                <div class="projectImg">
+                </div>
+                <div class="projectDescription">
+                  <h4>recipe lookup</h4>
+                  <p>Vanilla JavaScript combined with SASS</p>
+                  <p>A simple yet elegant way to look up a recipe for anything you want to cook</p>
+                  <p>Pick you ingredients & you will get your recipes</p>
+                </div>
+              </div> <!--end of projectContainer-->
+              
+              <div class="projectContainerFour">
+                <div class="projectImg">
+                </div>
+                <div class="projectDescription">
+                  <h4>robo trivia</h4>
+                  <p>Solo or Multiplayer trivia game</p>
+                  <p>API to generate questions & multiple choice answers</p>
+                  <p>API to assign avatars to usernames</p>
+                  <p>Firebase to keep user data and score</p>
+                </div>
+              </div> <!--end of projectContainer-->
+            </section> <!--end of project section--> 
+
+            <section class="skills">
+              <h2>skills</h2>
+              <ul>
+                <li><i class="devicon-html5-plain-wordmark"></i></li>
+                <li><i class="devicon-css3-plain-wordmark"></i></li>
+                <li><i class="devicon-sass-original"></i></li>
+                <li><i class="devicon-react-original"></i></li>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-jquery-plain-wordmark"></i></li>
+                <li><i class="devicon-firebase-plain-wordmark"></i></li>
+                <li><i class="devicon-github-original"></i></li>
+                <li><i class="devicon-bash-plain"></i></li>
+              </ul>
+
+            </section>
+            
+          </div>
+          <!-- <section class="splashPage">
             <h2>projects</h2>
             <ul>
               <li>
@@ -73,7 +165,7 @@
                 </span>
               </li>
             </ul>
-          </section>
+          </section> -->
         </div>
       </main>
     </div>

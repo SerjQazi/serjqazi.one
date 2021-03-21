@@ -1,0 +1,52 @@
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.folderContainer {
+  width: 100%;
+  max-height: calc(100vh - 310px);
+  border-radius: 50px;
+  background-color: whitesmoke;
+  border: 1px solid darkslategray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  margin: 25px 0;
+  overflow-y: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+// span {
+//   margin: 0 20px;
+// }
+
+.aboutSection {
+  display: flex;
+  margin: 20px auto;
+  padding: 50px;
+}
+
+.profileImgContainer {
+  width: 25%;
+  height: auto;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 100%;
+}
+
+.profileIntro {
+  padding: 75px;
+  width: 75%;
+}
+
+.skipButton {
+  font-size: 5rem;
+  margin: 20px;
+  text-align: center;
+}

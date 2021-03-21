@@ -7,12 +7,12 @@
   position: absolute;
 
   &:checked + .label .ball{
-    transform: translateX(24px);
+    transform: translateX(28px);
   } 
 }
 
 .label {
-  width: 50px;
+  width: 55px;
   height: 26px;
   background-color: #111;
   display: flex;
@@ -44,6 +44,7 @@
 
 .fa-moon{
   color: #f1c40f;
+  margin-right: 7px;
 }
 
 .fa-sun {
