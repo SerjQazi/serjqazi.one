@@ -55,3 +55,20 @@ footer {
     }
   }
 }
+
+.roboTriviaContainer {
+  width: 550px;
+  margin: 0px;
+  overflow: hidden ;
+}
+
+video {
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+  margin:-77px -16.885%;
+  width:133.777%;
+  border-radius: 80%;
+  transform: skew(2deg) rotate(-2deg) translateY(-50%);
+  
+}

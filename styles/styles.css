@@ -334,6 +334,25 @@ footer h3 {
   margin: 25px;
 }
 
+.roboTriviaContainer {
+  width: 550px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  margin: -77px -16.885%;
+  width: 133.777%;
+  border-radius: 80%;
+  -webkit-transform: skew(2deg) rotate(-2deg) translateY(-50%);
+          transform: skew(2deg) rotate(-2deg) translateY(-50%);
+}
+
 .sectionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
