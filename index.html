@@ -22,7 +22,7 @@
   <body>
     
     <header>
-      <div class="wrapper">
+      <div class="mainWrapper">
         <div class="headerContainer">
           <h1>serj qazi portfolio</h1>
           <h3>front-end web devepoler</h3>
@@ -45,11 +45,11 @@
       </div>
     </header>
 
-    <div class="wrapper">
+    <div class="mainWrapper">
       <main>
-        <div class="sectionContainer">
 
           <div class="folderContainer">
+            <div class="smallWrapper">
             <section class="aboutSection">
               <div class="profileImgContainer">
                 <img class="profilePic" src="./assets/profile-pic.jpg" alt="">
@@ -64,26 +64,49 @@
               </div>
             </section> <!--end of about me section--> 
 
-            <section class="projects">
-              <div class="reactProjects">
+
+
+
+
+            <section>
+
+            </section>
+
+            
+            
+            
+            <section class="projectSection">
+
+              <div class="projectHeaderContainer">
                 <h2>react projects</h2>
               </div>
               
-              <div class="projectContainerOne">
-                <div class="roboTriviaContainer">
-                  <video autoplay loop muted>
-                    <source src="./assets/robo-trivia.mp4"/>
-
+                <div class="projectVideoContainer">
+                  <h3>find-my-beer</h3>
+                  
+                  <video class="fmbLight" id="projectVideo" autoplay loop muted playsinline>
+                    <source src="./assets/project-gif/FMB-Light.mp4"/>
                   </video>
+
+                  <video class="fmbDark" id="projectVideo" autoplay loop muted playsinline>
+                    <source src="./assets/project-gif/FMB-Dark.mp4"/>
+                  </video>
+
                 </div>
-                <div class="projectDescription">
+              
+              </section>  
+                
+                
+                
+                
+                
+                <!-- <div class="projectDescription">
                   <h4>robo trivia</h4>
                   <p>Solo or Multiplayer trivia game</p>
                   <p>API to generate questions & multiple choice answers</p>
                   <p>API to assign avatars to usernames</p>
                   <p>Firebase to keep user data and score</p>
                 </div>
-              </div> <!--end of projectContainer-->
               
               <div class="projectContainerTwo">
                 <div class="projectImg">
@@ -95,7 +118,7 @@
                   <p>Font of card shows name and address</p>
                   <p>Back of card shows brewery type, contact info and website</p>
                 </div>
-              </div> <!--end of projectContainer-->
+              </div> 
               
               <div class="projectContainerThree">
                 <div class="projectImg">
@@ -106,7 +129,7 @@
                   <p>A simple yet elegant way to look up a recipe for anything you want to cook</p>
                   <p>Pick you ingredients & you will get your recipes</p>
                 </div>
-              </div> <!--end of projectContainer-->
+              </div> 
               
               <div class="projectContainerFour">
                 <div class="projectImg">
@@ -118,64 +141,71 @@
                   <p>API to assign avatars to usernames</p>
                   <p>Firebase to keep user data and score</p>
                 </div>
-              </div> <!--end of projectContainer-->
-            </section> <!--end of project section--> 
+              </div>  -->
 
             <section class="skills">
               <h2>skills</h2>
               <ul>
+                <li><i class="devicon-javascript-plain"></i></li>
+                <li><i class="devicon-react-original"></i></li>
+                <li><i class="devicon-jquery-plain-wordmark"></i></li>
                 <li><i class="devicon-html5-plain-wordmark"></i></li>
                 <li><i class="devicon-css3-plain-wordmark"></i></li>
                 <li><i class="devicon-sass-original"></i></li>
-                <li><i class="devicon-react-original"></i></li>
-                <li><i class="devicon-javascript-plain"></i></li>
-                <li><i class="devicon-jquery-plain-wordmark"></i></li>
-                <li><i class="devicon-firebase-plain-wordmark"></i></li>
                 <li><i class="devicon-github-original"></i></li>
-                <li><i class="devicon-bash-plain"></i></li>
+                <li><i class="devicon-firebase-plain-wordmark"></i></li>
+                <!-- <li><i class="devicon-bash-plain"></i></li> -->
               </ul>
 
             </section>
+
             
-          </div>
-          <!-- <section class="splashPage">
-            <h2>projects</h2>
-            <ul>
-              <li>
-                <a href="https://serjqazi.dev/robo-trivia">robo-trivia React & Firebase</a>
-                <span>
-                  <a href="https://github.com/robo-trivia-group/project-4-react">GitRepo</a>
-                </span>
-              </li>
-  
-              <li>
-                <a href="https://serjqazi.dev/find-my-beer">find-my-beer React App</a>
-                <span>
-                  <a href="https://github.com/SerjQazi/find-my-beer-porject-3">GitRepo</a>
-                </span>
-              </li>
-  
-              <li>
-                <a href="https://serjqazi.dev/recipe-lookup">recipe-lookup JavaScript</a>
-                <span>
-                  <a href="https://github.com/serj-tom-project-two/project-two-recipe-api">GitRepo</a>
-                </span>
-              </li>
-              
-              <li>
-                  <a href="https://serj-jordan-sanctuary-helper.github.io/project-one/">sanctuary-helper HTML / SASS</a>
-                <span>
-                  <a href="https://github.com/serj-jordan-sanctuary-helper/project-one">GitRepo</a>
-                </span>
-              </li>
-            </ul>
-          </section> -->
-        </div>
+          </div> <!-- end of smallWrapper  -->
+            
+          </div> <!-- end of folderContainer  -->
+
+
+                <!-- <section class="splashPage">
+                  <h2>projects</h2>
+                  <ul>
+                    <li>
+                      <a href="https://serjqazi.dev/robo-trivia">robo-trivia React & Firebase</a>
+                      <span>
+                        <a href="https://github.com/robo-trivia-group/project-4-react">GitRepo</a>
+                      </span>
+                    </li>
+        
+                    <li>
+                      <a href="https://serjqazi.dev/find-my-beer">find-my-beer React App</a>
+                      <span>
+                        <a href="https://github.com/SerjQazi/find-my-beer-porject-3">GitRepo</a>
+                      </span>
+                    </li>
+        
+                    <li>
+                      <a href="https://serjqazi.dev/recipe-lookup">recipe-lookup JavaScript</a>
+                      <span>
+                        <a href="https://github.com/serj-tom-project-two/project-two-recipe-api">GitRepo</a>
+                      </span>
+                    </li>
+                    
+                    <li>
+                        <a href="https://serj-jordan-sanctuary-helper.github.io/project-one/">sanctuary-helper HTML / SASS</a>
+                      <span>
+                        <a href="https://github.com/serj-jordan-sanctuary-helper/project-one">GitRepo</a>
+                      </span>
+                    </li>
+                  </ul>
+                </section> -->
+
+
+
+
       </main>
-    </div>
+    </div> <!-- end of mainWrapper -->
       
       <footer>
-        <div class="wrapper">
+        <div class="mainWrapper">
           <h3 class="footer">created by serj qazi</h3>
         </div>
       </footer>
