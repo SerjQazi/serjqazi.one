@@ -51,23 +51,15 @@
   color: #f39c12
 }
 
-// .projectVideoContainer {
-//   transition-delay: 0.7s linear;
-// }
-
-video.fmbDark {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-  transition: opacity 0.5s linear;
+.dark {
+  display: none;
 }
 
 .displayOff {
   display: none;
 }
 
-video.displayOn {
-  opacity: 1;
-  height: auto;
+.displayOn {
+  display: block;
 }
 

@@ -57,7 +57,7 @@
   justify-content: center;
   align-items: center;
   margin: 50px 0;
-  // width: 80%;
+  min-width: 345px;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -65,8 +65,11 @@
     align-items: center;
     li {
       list-style: none;
-      font-size: 8rem;
+      font-size: 7.5rem;
       margin: 20px;
+      .devicon-git-plain-wordmark{
+        font-size: 11rem;
+      }
     }
   }
 }
