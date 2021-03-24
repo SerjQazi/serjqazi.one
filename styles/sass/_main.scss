@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-size: 2rem;
-  background-color: #dbf0ef;
+  background-color: $lightBlue;
   transition: background 0.2s linear;
 }
 
@@ -43,29 +43,14 @@ footer {
 
 video {
   width: 100%;
-  // height: auto;
-  // height: 100%;
   border-radius: 20px;
   cursor: pointer;
 }
 
-// .projectVideoContainer {
-//   // display: flex;
-//   // flex-wrap: wrap;
-//   justify-content: center;
-//   margin: 50px auto;
-// }
-
-// .shContainer {
-//   border: 2px solid red;
-//   border-radius: 50px;
-//   width: 85%;
-// }
 .fmbContainer,
 .shContainer,
 .rtContainer,
 .rlContainer {
-  // border: 2px solid red;
   border-radius: 20px;
   width: 85%;
   margin: 0 15px;
@@ -80,9 +65,4 @@ video {
 
 .is-selected {
   pointer-events: auto;
-}
-
-
-.modalClass {
-
 }

@@ -1,5 +1,9 @@
 .bodyDark {
-    background-color: #292c35;
+    background-color: $deepBlue;
+  }
+
+  .darkFolder {
+    background-color: $darkYellow;
   }
 
 .checkbox {
@@ -43,12 +47,12 @@
 }
 
 .fa-moon{
-  color: #f1c40f;
+  color: $darkYellow;
   margin-right: 7px;
 }
 
 .fa-sun {
-  color: #f39c12
+  color: $lightYellow
 }
 
 .dark {

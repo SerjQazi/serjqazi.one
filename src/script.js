@@ -1,28 +1,11 @@
-// darkMode toggle
-const checkbox = document.getElementById('checkbox');
-
-checkbox.addEventListener('change', () => {
-  const bodyElement = document.querySelector('body');
-  bodyElement.classList.toggle('bodyDark');
-
-  const fmbLight = document.querySelectorAll('.light');
-  fmbLight.forEach(video => {
-    video.classList.toggle('displayOff');
-  });
-  
-  const fmbDark = document.querySelectorAll('.dark');
-  fmbDark.forEach(video => {
-    video.classList.toggle('displayOn');
-  });
-
-});
-
+// flickity carousel options
 const element = document.querySelector(".main-carousel");
 const flkty = new Flickity(element, {
   contain: true,
-  wrapAround:true,
+  wrapAround: true,
 });
 
+// tingle modal options
 const modalOptions = {
   footer: false,
   closeMethods: ["overlay", "button", "escape"],
@@ -30,10 +13,10 @@ const modalOptions = {
   cssClass: ["modalClass"],
 };
 
-const rtModal = new tingle.modal (modalOptions);
-const fmbModal = new tingle.modal (modalOptions);
-const rlModal = new tingle.modal (modalOptions);
-const shModal = new tingle.modal (modalOptions);
+const rtModal = new tingle.modal(modalOptions);
+const fmbModal = new tingle.modal(modalOptions);
+const rlModal = new tingle.modal(modalOptions);
+const shModal = new tingle.modal(modalOptions);
 
 const fmbContent = `<h4>find my beer</h4>
                   <p>A way to find all the breweries in your state</p>
@@ -83,18 +66,38 @@ const shContent = `<h4>sanctuary helper</h4>
                   </li>`;
 
 rtModal.setContent(rtContent);
-const roboTrivia = document.querySelector('.rtContainer');
-  roboTrivia.addEventListener('click', () => rtModal.open())
+const roboTrivia = document.querySelector(".rtContainer");
+roboTrivia.addEventListener("click", () => rtModal.open());
 
 fmbModal.setContent(fmbContent);
-const findMyBeer = document.querySelector('.fmbContainer');
-  findMyBeer.addEventListener('click', () => fmbModal.open())
+const findMyBeer = document.querySelector(".fmbContainer");
+findMyBeer.addEventListener("click", () => fmbModal.open());
 
 rlModal.setContent(rlContent);
-const recipeLookup = document.querySelector('.rlContainer');
-  recipeLookup.addEventListener('click', () => rlModal.open())
+const recipeLookup = document.querySelector(".rlContainer");
+recipeLookup.addEventListener("click", () => rlModal.open());
 
 shModal.setContent(shContent);
-const sanctuaryHelper = document.querySelector('.shContainer');
-  sanctuaryHelper.addEventListener('click', () => shModal.open())
+const sanctuaryHelper = document.querySelector(".shContainer");
+sanctuaryHelper.addEventListener("click", () => shModal.open());
 
+// darkMode toggle function
+const checkbox = document.getElementById("checkbox");
+
+checkbox.addEventListener("change", () => {
+  const bodyElement = document.querySelector("body");
+    bodyElement.classList.toggle("bodyDark");
+
+  const folderContainer = document.querySelector(".folderContainer");
+    folderContainer.classList.toggle('darkFolder')
+
+  const fmbLight = document.querySelectorAll(".light");
+  fmbLight.forEach((video) => {
+    video.classList.toggle("displayOff");
+  });
+
+  const fmbDark = document.querySelectorAll(".dark");
+  fmbDark.forEach((video) => {
+    video.classList.toggle("displayOn");
+  });
+});

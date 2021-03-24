@@ -7,8 +7,9 @@
   width: 100%;
   height: calc(100vh - 310px);
   border-radius: 50px;
-  background-color: whitesmoke;
-  border: 1px solid darkslategray;
+  background-color: $lightYellow;
+  transition: background 0.2s linear;
+  border: 1px solid $deepBlue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,17 +40,10 @@
 }
 
 .skipButton {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 20px;
   text-align: center;
 }
-
-
-
-
-
-
-
 
 .skills {
   display: flex;

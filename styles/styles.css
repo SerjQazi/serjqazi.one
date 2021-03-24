@@ -681,7 +681,7 @@ https://flickity.metafizzy.co
 h1 {
   font-family: "Josefin Slab", serif;
   font-weight: 500;
-  font-size: 6rem;
+  font-size: 8rem;
   margin: 40px 0 20px;
 }
 
@@ -696,7 +696,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   font-size: 2rem;
-  background-color: #dbf0ef;
+  background-color: #a7cced;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
 }
@@ -774,8 +774,10 @@ video {
   width: 100%;
   height: calc(100vh - 310px);
   border-radius: 50px;
-  background-color: whitesmoke;
-  border: 1px solid darkslategray;
+  background-color: #ffea81;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+  border: 1px solid #1d3557;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -815,7 +817,7 @@ video {
 }
 
 .skipButton {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 20px;
   text-align: center;
 }
@@ -863,7 +865,11 @@ video {
 }
 
 .bodyDark {
-  background-color: #292c35;
+  background-color: #1d3557;
+}
+
+.darkFolder {
+  background-color: #ffe562;
 }
 
 .checkbox {
@@ -918,12 +924,12 @@ video {
 }
 
 .fa-moon {
-  color: #f1c40f;
+  color: #ffe562;
   margin-right: 7px;
 }
 
 .fa-sun {
-  color: #f39c12;
+  color: #ffea81;
 }
 
 .dark {
