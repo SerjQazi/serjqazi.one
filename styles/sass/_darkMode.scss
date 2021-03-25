@@ -6,6 +6,11 @@
     background-color: $darkYellow;
   }
 
+  .h1Dark,
+  .h3Dark {
+    color: $lightBlue;
+  }
+
 .checkbox {
   opacity: 0;
   position: absolute;
@@ -46,7 +51,7 @@
   margin: 20px;
 }
 
-.fa-moon{
+.fa-moon {
   color: $darkYellow;
   margin-right: 7px;
 }

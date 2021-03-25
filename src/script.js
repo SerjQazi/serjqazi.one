@@ -100,4 +100,13 @@ checkbox.addEventListener("change", () => {
   fmbDark.forEach((video) => {
     video.classList.toggle("displayOn");
   });
+
+  const h1Element = document.querySelector('h1');
+    h1Element.classList.toggle('h1Dark')
+
+  const h3Element = document.querySelectorAll('h3');
+    h3Element.forEach((h3) => {
+      h3.classList.toggle("h3Dark");
+    })
+    
 });
