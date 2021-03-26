@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
   </head>
   <body>
     
@@ -53,7 +55,7 @@
               
               <div class="profileIntro">
                 <h2>about me</h2>
-                <p>I'm a web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of web-development. I am passitonate about creating impactful web applications using React, JavaScript, HTML and SASS. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.</p>
+                <p>I'm a web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of web-development. I am passionate about creating impactful web applications using React, JavaScript, HTML and SASS. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.</p>
               </div>
               <div class="profileImgContainer">
                 <img class="profilePic" src="./assets/profile-pic.jpg" alt="">
@@ -123,8 +125,8 @@
 
                   <div class="skills">
                     <ul>
-                      <li><i class="devicon-javascript-plain"></i></li>
                       <li><i class="devicon-react-original"></i></li>
+                      <li><i class="devicon-javascript-plain"></i></li>
                       <li><i class="devicon-jquery-plain-wordmark"></i></li>
                       <li><i class="devicon-html5-plain-wordmark"></i></li>
                       <li><i class="devicon-css3-plain-wordmark"></i></li>
@@ -133,6 +135,25 @@
                       <li><i class="devicon-firebase-plain-wordmark"></i></li>
                     </ul>
                   </div>
+                </section>
+
+                <section>
+                  <h2>contact</h2>
+                  <form>
+                    <fieldset>
+                      <label class="sr-only" for="name">enter your name</label>
+                      <input type="text" name="name" id="name" placeholder="name" required>
+
+                      <label class="sr-only" for="email">enter your email address</label>
+                      <input type="email" name="email" id="email" placeholder="email" required>
+
+                      <label class="sr-only" for="message">enter your message</label>
+                      <textarea name="message" id="message" placeholder="message"></textarea>
+                      <div class="buttonContainer">
+                        <button class="submitButton">Send</button>
+                      </div>
+                    </fieldset>
+                  </form>
                 </section>
             
           </div> 

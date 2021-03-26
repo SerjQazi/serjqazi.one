@@ -760,8 +760,8 @@ footer h3 {
   height: 62vh;
   padding: 100px;
   background-color: #ffe562;
-  -webkit-animation: slideUp 1s ease;
-          animation: slideUp 1s ease;
+  -webkit-animation: slideUp 0.7s ease-in-out;
+          animation: slideUp 0.7s ease-in-out;
   -webkit-transform: translateY(19%);
           transform: translateY(19%);
 }
@@ -945,6 +945,62 @@ h2 {
   margin-top: 50px;
 }
 
+fieldset {
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 40%;
+}
+
+input {
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #1d3557;
+  margin: 5px 0;
+}
+
+textarea {
+  padding: 15px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  height: 150px;
+  border: none;
+  border-bottom: 2px solid #1d3557;
+  background-color: transparent;
+}
+
+.buttonContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.submitButton {
+  padding: 20px 0;
+  width: 60%;
+  margin: 15px 0;
+  font-size: 2rem;
+  color: #1d3557;
+  background-color: #a7cced;
+  border: 2px solid #1d3557;
+  border-radius: 20px;
+}
+
+.submitButton:hover {
+  background-color: #1d3557;
+  color: #a7cced;
+}
+
 h4 {
   font-family: "Josefin Slab", serif;
   font-weight: 700;
@@ -984,7 +1040,7 @@ h4 {
   display: flex;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 865px) {
   .modalButtons {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -996,10 +1052,10 @@ h4 {
 
 .modalButtons li {
   list-style: none;
-  margin: 50px;
+  margin: 50px 50px 50px 0;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 865px) {
   .modalButtons li {
     margin: 0;
     margin-top: 30px;
@@ -1009,8 +1065,8 @@ h4 {
 }
 
 .modalButtons li a {
-  font-size: 1.8rem;
-  padding: 20px;
+  font-size: 2rem;
+  padding: 20px 55px;
   background-color: #a7cced;
   color: #1d3557;
   border: 2px solid #1d3557;
@@ -1019,7 +1075,7 @@ h4 {
   text-align: center;
 }
 
-@media (max-width: 625px) {
+@media (max-width: 865px) {
   .modalButtons li a {
     display: block;
     width: 100%;

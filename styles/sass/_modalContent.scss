@@ -23,26 +23,26 @@ align-items: flex-start;
 
 .modalButtons {
   display: flex;
-  @include mq (625px) {
+  @include mq (865px) {
     flex-direction: column;
     width: 100%;
   }
   li {
     list-style: none;
-    margin: 50px;
-      @include mq (625px) {
+    margin: 50px 50px 50px 0;
+      @include mq (865px) {
       margin: 0;
       margin-top: 30px;
       width: 100%;
       display: block;
     }
     a {
-      @include mq (625px){
+      @include mq (865px){
         display: block;
         width: 100%;
       }
-      font-size: 1.8rem;
-      padding: 20px;
+      font-size: 2rem;
+      padding: 20px 55px;
       background-color: $lightBlue;
       color: $deepBlue;
       border: 2px solid $deepBlue;

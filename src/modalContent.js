@@ -5,8 +5,8 @@ const rtContent = `
   <ul class='modalIconContainer'>
     <li class='modalIcons'><i class="devicon-react-original"></i></li>
     <li class='modalIcons'><i class="devicon-javascript-plain"></i></li>
-    <li class='modalIcons'><i class="devicon-firebase-plain-wordmark"></i></li>
     <li class='modalIcons'><i class="devicon-html5-plain-wordmark"></i></li>
+    <li class='modalIcons'><i class="devicon-firebase-plain-wordmark"></i></li>
     <li class='modalIcons'><i class="devicon-sass-original"></i></li>
   </ul>
   

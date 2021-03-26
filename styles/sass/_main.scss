@@ -98,7 +98,7 @@ footer {
         padding: 0 10px;
       }
     background-color: $darkYellow;
-    animation: slideUp 1s ease;
+    animation: slideUp 0.7s ease-in-out;
     transform: translateY(19%);
   }
 }

@@ -69,3 +69,50 @@ h2 {
 .skillsHeaderContainer {
   margin-top: 50px;
 }
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+input {
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid $deepBlue;
+  margin: 5px 0;
+}
+
+textarea {
+  padding: 15px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  height: 150px;
+  border: none;
+  border-bottom: 2px solid $deepBlue;
+  background-color: transparent;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  padding: 20px 0;
+  width: 60%;
+  margin: 15px 0;
+  font-size: 2rem;
+  color: $deepBlue;
+  background-color: $lightBlue;
+  border: 2px solid $deepBlue;
+  border-radius: 20px;
+    &:hover {
+      background-color: $deepBlue;
+      color: $lightBlue;
+    }
+}
+
