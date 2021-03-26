@@ -5,6 +5,7 @@ body {
   font-size: 2rem;
   background-color: $lightBlue;
   transition: background 0.2s linear;
+  max-height: 100vh;
 }
 
 .mainWrapper {
@@ -97,8 +98,6 @@ footer {
     max-width: 1400px;
     min-height: 62vh;
     padding: 100px;
-    // overflow: hidden;
-    // overflow-y: scroll;
     
       @media (max-width: 820px){
         padding: 0 20px;
