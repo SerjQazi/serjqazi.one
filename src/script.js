@@ -1,3 +1,5 @@
+import {rtContent, fmbContent, rlContent, shContent} from './modalContent.js'
+
 // flickity carousel options
 const element = document.querySelector(".main-carousel");
 const flkty = new Flickity(element, {
@@ -18,52 +20,6 @@ const fmbModal = new tingle.modal(modalOptions);
 const rlModal = new tingle.modal(modalOptions);
 const shModal = new tingle.modal(modalOptions);
 
-const fmbContent = `<h4>find my beer</h4>
-                  <p>A way to find all the breweries in your state</p>
-                  <p>API to generate a list of breweries</p>
-                  <p>Font of card shows name and address</p>
-                  <p>Back of card shows brewery type, contact info and website</p>
-                  <li>
-                    <a href="https://serjqazi.dev/find-my-beer">find-my-beer React App</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/SerjQazi/find-my-beer-porject-3">GitRepo</a>
-                  </li>`;
-
-const rtContent = `<h4>robo trivia</h4>
-                  <p>Solo or Multiplayer trivia game</p>
-                  <p>API to generate questions & multiple choice answers</p>
-                  <p>API to assign avatars to usernames</p>
-                  <p>Firebase to keep user data and score</p>
-                  <li>
-                    <a href="https://serjqazi.dev/robo-trivia">robo-trivia React & Firebase</a>
-                  </li>  
-                  <li>
-                    <a href="https://github.com/robo-trivia-group/project-4-react">GitRepo</a>
-                  </li>`;
-
-const rlContent = `<h4>recipe lookup</h4>
-                  <p>Vanilla JavaScript combined with SASS</p>
-                  <p>A simple yet elegant way to look up a recipe for anything you want to cook</p>
-                  <p>Pick you ingredients & you will get your recipes</p>
-                  <li>
-                    <a href="https://serjqazi.dev/recipe-lookup">recipe-lookup JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/serj-tom-project-two/project-two-recipe-api">GitRepo</a>
-                  </li>`;
-
-const shContent = `<h4>sanctuary helper</h4>
-                  <p>a multi-page PSD coversion</p>
-                  <p>fully responsive on all screen sizes</p>
-                  <p>has an aminated collapsing mobile nav</p>
-                  <p>styled to pixel perfection with SASS</p>
-                  <li>
-                    <a href="https://serj-jordan-sanctuary-helper.github.io/project-one/">sanctuary-helper HTML / SASS</a>
-                  </li>
-                  <li>
-                    <a href="https://github.com/serj-jordan-sanctuary-helper/project-one">GitRepo</a>
-                  </li>`;
 
 rtModal.setContent(rtContent);
 const roboTrivia = document.querySelector(".rtContainer");
@@ -81,15 +37,17 @@ shModal.setContent(shContent);
 const sanctuaryHelper = document.querySelector(".shContainer");
 sanctuaryHelper.addEventListener("click", () => shModal.open());
 
+
+
 // darkMode toggle function
 const checkbox = document.getElementById("checkbox");
 
-checkbox.addEventListener("change", () => {
+checkbox.onchange = () => {
   const bodyElement = document.querySelector("body");
-    bodyElement.classList.toggle("bodyDark");
+  bodyElement.classList.toggle("bodyDark");
 
   const folderContainer = document.querySelector(".folderContainer");
-    folderContainer.classList.toggle('darkFolder')
+  folderContainer.classList.toggle("darkFolder");
 
   const fmbLight = document.querySelectorAll(".light");
   fmbLight.forEach((video) => {
@@ -101,12 +59,11 @@ checkbox.addEventListener("change", () => {
     video.classList.toggle("displayOn");
   });
 
-  const h1Element = document.querySelector('h1');
-    h1Element.classList.toggle('h1Dark')
+  const h1Element = document.querySelector("h1");
+  h1Element.classList.toggle("h1Dark");
 
-  const h3Element = document.querySelectorAll('h3');
-    h3Element.forEach((h3) => {
-      h3.classList.toggle("h3Dark");
-    })
-    
-});
+  const h3Element = document.querySelectorAll("h3");
+  h3Element.forEach((h3) => {
+    h3.classList.toggle("h3Dark");
+  });
+};

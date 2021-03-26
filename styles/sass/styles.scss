@@ -1,8 +1,11 @@
 @import 'setup';
 @import './packageStyles/flickity';
 @import './packageStyles/tingle';
-@import "header";
+@import 'variables';
+@import 'mixins';
 @import "main";
+@import "header";
 @import 'folderContainer';
+@import 'modalContent';
 @import 'darkMode';
 

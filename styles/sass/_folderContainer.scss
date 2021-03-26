@@ -23,19 +23,15 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  // position: relative;
 }
 
 .profileIntro {
   padding-right: 5vw;
   max-width: 70%;
-  // border: 2px solid red;
 }
 
 .profileImgContainer {
   width: 25%;
-  // position: absolute;
-  // right: 0;
 }
 
 .profilePic {
@@ -57,4 +53,19 @@
       color: $deepBlue;
     }
   }
+}
+
+h2 {
+  font-family: $josefinSlab;
+  font-weight: 700;
+  font-size: 4rem;
+  color: $deepBlue;
+}
+
+.projectHeaderContainer {
+  margin: 20px auto;
+}
+
+.skillsHeaderContainer {
+  margin-top: 50px;
 }

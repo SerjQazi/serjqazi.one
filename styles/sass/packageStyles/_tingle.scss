@@ -182,20 +182,9 @@
 -------------------------------------------------------------- */
 
 @media (max-width : 540px) {
-  .tingle-modal {
-    top: 0px;
-    display: block;
-    padding-top: 60px;
-    width: 100%;
-  }
-
-  .tingle-modal-box {
-    width: auto;
-    border-radius: 0;
-  }
-
   .tingle-modal-box__content {
     overflow-y: scroll;
+    scrollbar-width: none;
   }
 
   .tingle-modal--noClose {
