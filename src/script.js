@@ -67,3 +67,9 @@ checkbox.onchange = () => {
     h3.classList.toggle("h3Dark");
   });
 };
+
+
+const bodyElement = document.querySelector("body");
+bodyElement.ontouchmove = (e) => {
+  e.preventDefault();
+}
