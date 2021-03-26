@@ -1,11 +1,11 @@
-@import "setup";
-@import "header";
+@import 'setup';
+@import './packageStyles/flickity';
+@import './packageStyles/tingle';
+@import 'variables';
+@import 'mixins';
 @import "main";
-@import 'splashPage'
-
-//todo: Header Font
-//? font-family: 'Josefin Slab', serif;
-
-//todo: Body Font
-//? font-family: 'Lato', sans-serif;
+@import "header";
+@import 'folderContainer';
+@import 'modalContent';
+@import 'darkMode';
 
