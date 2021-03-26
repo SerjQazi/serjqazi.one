@@ -67,7 +67,7 @@ const fmbContent = `
   </ul>
   
   <div class='modalDescription'>
-    <p>A way to find all the breweries in your state, the API generates a list of breweries once you pick a State. The Front of the card displays name and address and as you hover over each card the back shows brewery type, contact info and brewery website.</p>
+    <p>A way to find all the breweries in your state, the API generates a list of breweries once you pick a state. The front of the card displays name and address, and as you hover over each card the back shows brewery type, contact info and brewery website.</p>
   </div>
 
   <div class='modalButtons'>
@@ -103,7 +103,7 @@ const rlContent = `
   </ul>
   
   <div class='modalDescription'>
-    <p>A simple yet elegant way to look up a recipe for anything you want to cook just pick your ingridients and you will receive recipes. Health info and nutritional facts are just a click away.</p>
+    <p>A simple yet elegant way to look up a recipe for anything you want to cook, just pick your ingridients and you will receive recipes. Health info and nutritional facts are just a click away.</p>
   </div>
 
   <div class='modalButtons'>
