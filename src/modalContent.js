@@ -3,11 +3,26 @@ const rtContent = `
   <h4>robo trivia</h4>
   
   <ul class='modalIconContainer'>
-    <li class='modalIcons'><i class="devicon-react-original"></i></li>
-    <li class='modalIcons'><i class="devicon-javascript-plain"></i></li>
-    <li class='modalIcons'><i class="devicon-html5-plain-wordmark"></i></li>
-    <li class='modalIcons'><i class="devicon-firebase-plain-wordmark"></i></li>
-    <li class='modalIcons'><i class="devicon-sass-original"></i></li>
+    <li>
+      <i class="devicon-react-original"></i>
+      <p>React</p>
+    </li>
+    <li>
+      <i class="devicon-javascript-plain"></i>
+      <p>JavaScript</p>
+    </li>
+    <li>
+      <i class="devicon-html5-plain"></i>
+      <p>HTML5</p>
+    </li>
+    <li>
+      <i class="devicon-firebase-plain"></i></i>
+      <p>Firebase</p>
+    </li>
+    <li>
+      <i class="devicon-sass-original"></i>
+      <p>SASS</p>
+    </li>
   </ul>
   
   <div class='modalDescription'>
@@ -32,10 +47,23 @@ const fmbContent = `
   <h4>find my beer</h4>
   
   <ul class='modalIconContainer'>
-    <li class='modalIcons'><i class="devicon-react-original"></i></li>
-    <li class='modalIcons'><i class="devicon-javascript-plain"></i></li>
-    <li class='modalIcons'><i class="devicon-html5-plain-wordmark"></i></li>
-    <li class='modalIcons'><i class="devicon-sass-original"></i></li>
+    <li>
+      <i class="devicon-react-original"></i>
+      <p>React</p>
+    </li>
+    <li>
+      <i class="devicon-javascript-plain"></i>
+      <p>JavaScript</p>
+    </li>
+
+    <li>
+      <i class="devicon-html5-plain"></i>
+      <p>HTML5</p>
+    </li>
+    <li>
+      <i class="devicon-sass-original"></i>
+      <p>SASS</p>
+    </li>
   </ul>
   
   <div class='modalDescription'>
@@ -60,9 +88,18 @@ const rlContent = `
   <h4>recipe lookup</h4>
   
   <ul class='modalIconContainer'>
-    <li class='modalIcons'><i class="devicon-javascript-plain"></i></li>
-    <li class='modalIcons'><i class="devicon-html5-plain-wordmark"></i></li>
-    <li class='modalIcons'><i class="devicon-sass-original"></i></li>
+    <li>
+      <i class="devicon-javascript-plain"></i>
+      <p>JavaScript</p>
+    </li>
+    <li>
+      <i class="devicon-html5-plain"></i>
+      <p>HTML5</p>
+    </li>
+    <li>
+      <i class="devicon-sass-original"></i>
+      <p>SASS</p>
+    </li>
   </ul>
   
   <div class='modalDescription'>
@@ -87,8 +124,14 @@ const shContent = `
   <h4>sanctuary helper</h4>
 
   <ul class='modalIconContainer'>
-    <li class='modalIcons'><i class="devicon-html5-plain-wordmark"></i></li>
-    <li class='modalIcons'><i class="devicon-sass-original"></i></li>
+    <li>
+      <i class="devicon-html5-plain"></i>
+      <p>HTML5</p>
+    </li>
+    <li>
+      <i class="devicon-sass-original"></i>
+      <p>SASS</p>
+    </li>
   </ul>
   
   <div class='modalDescription'>

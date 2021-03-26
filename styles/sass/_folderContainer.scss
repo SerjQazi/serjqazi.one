@@ -6,7 +6,7 @@
 .folderContainer {
   width: 100%;
   height: calc(100vh - 310px);
-  border-radius: 50px;
+  border-radius: 50px 50px 15px 15px;
   background-color: $lightYellow;
   transition: background 0.2s linear;
   border: 1px solid $deepBlue;
@@ -26,6 +26,9 @@
     @include mq (995px) {
       flex-direction: column;
       align-items: center;
+    }
+    @include mq (455px) {
+      margin-top: 10px;
     }
 }
 
