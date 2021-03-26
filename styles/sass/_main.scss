@@ -6,6 +6,7 @@ body {
   background-color: $lightBlue;
   transition: background 0.2s linear;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .mainWrapper {

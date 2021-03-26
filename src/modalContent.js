@@ -26,7 +26,7 @@ const rtContent = `
   </ul>
   
   <div class='modalDescription'>
-    <p>A solo or multiplayer trivia game that uses an API to generate questions & multiple choice answers. A simpler second API is used to generate the avatars for each unique username and finally firebase keeps store all of the user data and assigns the score to each user's unique key.</p>
+    <p>A solo or multiplayer trivia game that uses an API to generate questions & multiple choice answers. A simpler second API is used to generate the avatars for each unique username and finally firebase stores all of the user data and assigns the score to each user's unique key.</p>
   </div>
 
   <div class='modalButtons'>
