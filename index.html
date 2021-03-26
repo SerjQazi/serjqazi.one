@@ -139,7 +139,7 @@
 
                 <section>
                   <h2>contact</h2>
-                  <form>
+                  <form action="POST" name="contact" data-netlify="true">
                     <fieldset>
                       <label class="sr-only" for="name">enter your name</label>
                       <input type="text" name="name" id="name" placeholder="name" required>
@@ -150,7 +150,7 @@
                       <label class="sr-only" for="message">enter your message</label>
                       <textarea name="message" id="message" placeholder="message"></textarea>
                       <div class="buttonContainer">
-                        <button class="submitButton">Send</button>
+                        <button class="submitButton" type="submit">Send</button>
                       </div>
                     </fieldset>
                   </form>
