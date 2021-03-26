@@ -891,30 +891,51 @@ h3 {
   margin-top: 50px;
 }
 
+@media (max-width: 995px) {
+  .aboutSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .profileIntro {
-  padding-right: 5vw;
-  max-width: 70%;
+  width: 55%;
+}
+
+@media (max-width: 995px) {
+  .profileIntro {
+    width: 100%;
+  }
+  .profileIntro p {
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
+}
+
+.imgSection {
+  width: 45%;
+}
+
+@media (max-width: 995px) {
+  .imgSection {
+    width: 100%;
+  }
 }
 
 .profileImgContainer {
-  width: 25%;
-}
-
-.profilePic {
-  border-radius: 50%;
   width: 100%;
-}
-
-.skills {
-  min-width: 345px;
-}
-
-.skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -923,11 +944,75 @@ h3 {
           align-items: center;
 }
 
+.profileImgContainer .socialIcons {
+  width: 100%;
+}
+
+.profilePic {
+  border-radius: 50%;
+  width: 60%;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 995px) {
+  .profilePic {
+    margin-bottom: 10px;
+  }
+}
+
+.skills {
+  min-width: 345px;
+}
+
+@media (max-width: 455px) {
+  .skills {
+    min-width: 100%;
+  }
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
+  padding: 10px;
+  margin: 5px;
   font-size: 7.5rem;
-  margin: 0 20px;
   color: #1d3557;
+}
+
+.skills ul li p {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.6rem;
+  color: #1d3557;
+  margin: 5px 0;
+}
+
+@media (max-width: 455px) {
+  .skills ul li {
+    font-size: 5rem;
+  }
 }
 
 h2 {
@@ -945,6 +1030,123 @@ h2 {
   margin-top: 50px;
 }
 
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1055px) {
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.socialIcons {
+  width: 40%;
+  margin-top: 30px;
+}
+
+.socialIcons ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.socialIcons ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.socialIcons ul li p {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.6rem;
+  color: #1d3557;
+}
+
+.socialIcons ul li a {
+  text-decoration: none;
+  color: #1d3557;
+}
+
+.socialIcons ul li a i {
+  font-size: 5rem;
+}
+
+@media (max-width: 455px) {
+  .socialIcons ul li a i {
+    font-size: 3rem;
+  }
+}
+
+.socialIcons ul li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+@media (max-width: 1055px) {
+  .socialIcons {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socialIcons ul {
+    width: 80%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.contactForm {
+  width: 60%;
+}
+
+@media (max-width: 1055px) {
+  .contactForm {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 fieldset {
   border: none;
   display: -webkit-box;
@@ -954,7 +1156,7 @@ fieldset {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 100%;
 }
 
 input {
@@ -988,17 +1190,67 @@ textarea {
 .submitButton {
   padding: 20px 0;
   width: 60%;
-  margin: 15px 0;
+  margin: 40px;
   font-size: 2rem;
   color: #1d3557;
   background-color: #a7cced;
   border: 2px solid #1d3557;
   border-radius: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-.submitButton:hover {
+.submitButton:hover, .submitButton:focus {
   background-color: #1d3557;
   color: #a7cced;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.submitButton:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.socialIcons ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: -5px;
+  font-size: 5rem;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 455px) {
+  .socialIcons ul li::before {
+    font-size: 3rem;
+    top: 0;
+  }
+}
+
+.socialIcons ul li:nth-child(1)::before {
+  content: '\f08c';
+  color: #0466c8;
+  border-bottom: 6px solid #0466c8;
+}
+
+.socialIcons ul li:nth-child(2)::before {
+  content: '\f09b';
+  color: #ff8800;
+  border-bottom: 6px solid #ff8800;
+}
+
+.socialIcons ul li:nth-child(3)::before {
+  content: '\f099';
+  color: #3a86ff;
+  border-bottom: 6px solid #3a86ff;
+}
+
+.socialIcons ul li:hover::before,
+.socialIcons ul li:active::before {
+  height: 100%;
 }
 
 h4 {
