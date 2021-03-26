@@ -18,7 +18,7 @@
   overflow-y: scroll;
   scrollbar-width: none;
     @include mq (1100px) {
-      max-height: calc(100vh - 310px);
+      max-height: calc(100vh - 30px);
     }
 }
 
@@ -51,7 +51,6 @@
   @include mq (995px) {
     width: 100%;
   }
-
 }
 
 .profileImgContainer {
