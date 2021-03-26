@@ -69,7 +69,7 @@ checkbox.onchange = () => {
 };
 
 
-const bodyElement = document.querySelector("body");
-bodyElement.ontouchmove = (e) => {
-  e.preventDefault();
-}
+// const bodyElement = document.querySelector("body");
+// bodyElement.ontouchmove = (e) => {
+//   e.preventDefault();
+// }

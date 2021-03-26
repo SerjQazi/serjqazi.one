@@ -5,7 +5,8 @@ body {
   font-size: 2rem;
   background-color: $lightBlue;
   transition: background 0.2s linear;
-  // overflow: auto;
+  max-height: 100vh;
+  overflow: auto;
 }
 
 .mainWrapper {

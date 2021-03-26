@@ -261,18 +261,21 @@ textarea {
   content: '\f08c';
       color: #0466c8;
       border-bottom: 6px solid #0466c8;
+      pointer-events: none;
 }
 
 .socialIcons ul li:nth-child(2)::before {
   content: '\f09b';
       color: #ff8800;
       border-bottom: 6px solid #ff8800;
+      pointer-events: none;
 }
 
 .socialIcons ul li:nth-child(3)::before {
   content: '\f099';
       color: #3a86ff;
       border-bottom: 6px solid #3a86ff;
+      pointer-events: none;
 }
 
 .socialIcons ul li:hover::before,
