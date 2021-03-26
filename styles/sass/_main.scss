@@ -26,6 +26,9 @@ footer {
       font-family: $josefinSlab;
       font-weight: 700;
       font-size: 2.2rem;
+        @include mq (455px) {
+          font-size: 2rem;
+        }
     }
 }
 
@@ -80,15 +83,20 @@ footer {
 
 .tingle-modal{
   background: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .tingle-modal--visible {
-  .tingle-modal-box{
-    border-radius: 50px;
+  .tingle-modal-box {
+    border-radius: 50px 50px 15px 15px;
     width: 90vw;
     max-width: 1400px;
-    height: 62vh;
+    min-height: 62vh;
     padding: 100px;
+    // overflow: hidden;
+    // overflow-y: scroll;
+    
       @media (max-width: 820px){
         padding: 0 20px;
       }
@@ -97,11 +105,13 @@ footer {
         align-items: center;
         padding: 0 10px;
       }
+
     background-color: $darkYellow;
     animation: slideUp 0.7s ease-in-out;
     transform: translateY(19%);
   }
 }
+
 
 @keyframes slideUp {
   from {
