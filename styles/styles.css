@@ -674,6 +674,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 455px) {
+  .smallWrapper {
+    width: 100%;
+  }
+}
+
 footer {
   display: block;
   text-align: right;
