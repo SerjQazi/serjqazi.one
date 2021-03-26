@@ -9,6 +9,10 @@ body {
   overflow: auto;
 }
 
+main {
+  max-height: calc(100vh - 310px);
+}
+
 .mainWrapper {
   max-width: 1400px;
   width: 90%;

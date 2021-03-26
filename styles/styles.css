@@ -664,6 +664,10 @@ body {
   overflow: auto;
 }
 
+main {
+  max-height: calc(100vh - 310px);
+}
+
 .mainWrapper {
   max-width: 1400px;
   width: 90%;
@@ -887,7 +891,7 @@ h3 {
 
 .folderContainer {
   width: 100%;
-  max-height: calc(100vh - 310px);
+  height: 100%;
   border-radius: 50px 50px 15px 15px;
   background-color: #ffea81;
   -webkit-transition: background 0.2s linear;
