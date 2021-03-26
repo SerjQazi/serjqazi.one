@@ -5,8 +5,7 @@
 
 .folderContainer {
   width: 100%;
-  // max-height: calc(100vh - 310px);
-  height: 100%;
+  height: calc(100vh - 310px);
   border-radius: 50px 50px 15px 15px;
   background-color: $lightYellow;
   transition: background 0.2s linear;
@@ -282,5 +281,4 @@ textarea {
 .socialIcons ul li:hover::before,
 .socialIcons ul li:active::before {
   height: 100%;
-  // transform: scale(1.05);
 }

@@ -4,13 +4,9 @@ body {
   line-height: 1.6;
   font-size: 2rem;
   background-color: $lightBlue;
-  transition: background 0.2s linear;
   max-height: 100vh;
-  overflow: auto;
-}
-
-main {
-  max-height: calc(100vh - 310px);
+  transition: background 0.2s linear;
+  overflow: hidden;
 }
 
 .mainWrapper {
@@ -92,8 +88,10 @@ footer {
 
 .tingle-modal{
   background: rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    overflow-y: auto;
+    @include mq (455px) {
+      overflow: hidden;
+      overflow-y: auto;
+    }
 }
 
 .tingle-modal--visible {
