@@ -1206,10 +1206,11 @@ fieldset {
 
 input {
   padding: 15px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid #1d3557;
   margin: 5px 0;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid #1d3557;
 }
 
 textarea {
@@ -1217,6 +1218,7 @@ textarea {
   resize: none;
   overflow: auto;
   outline: none;
+  width: 100%;
   height: 150px;
   border: none;
   border-bottom: 2px solid #1d3557;
