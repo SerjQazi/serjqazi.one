@@ -921,7 +921,7 @@ h3 {
 
 @media (max-width: 1100px) {
   .folderContainer {
-    max-height: calc(96vh - 240px);
+    max-height: calc(95vh - 245px);
   }
 }
 
