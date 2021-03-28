@@ -17,7 +17,7 @@
   overflow-y: scroll;
   scrollbar-width: none;
     @include mq (1100px) {
-      max-height: calc(95vh - 245px);
+      max-height: calc(95vh - 265px);
     }
 }
 
@@ -30,7 +30,7 @@
       align-items: center;
     }
     @include mq (455px) {
-      margin-top: 10px;
+      margin-top: 25px;
     }
 }
 
