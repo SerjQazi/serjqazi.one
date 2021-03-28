@@ -2,8 +2,10 @@ body {
   font-family: $lato;
   font-weight: 400;
   line-height: 1.6;
+  letter-spacing: 1px;
   font-size: 2rem;
   background-color: $lightBlue;
+  color: $deepBlue;
   max-height: 90vh;
   transition: background 0.2s linear;
   overflow: hidden;
@@ -45,6 +47,7 @@ footer {
   width: 70%;
   margin-right: -130px ;
   pointer-events: none;
+  position: relative;
     video {
       width: 100%;
       border-radius: 20px;
@@ -56,9 +59,24 @@ footer {
     }
 }
 
+.projectTitle {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 1;
+  pointer-events: none;
+  font-size: 2.5rem;
+  font-family: $josefinSlab;
+  font-weight: 700;
+}
+
 .is-selected {
   pointer-events: auto;
   z-index: 1;
+    p {
+      display: block;
+    }
     video {
       opacity: 1;
       transform: scale(1);
@@ -80,6 +98,10 @@ footer {
       opacity: 1;
       transform: translateY(-50%) scale(1.4);
     }
+}
+
+.darkButtons {
+  color: $lightBlue;
 }
 
 .flickity-prev-next-button.previous { 
@@ -115,7 +137,7 @@ footer {
         padding: 0 10px;
       }
 
-    background-color: $darkYellow;
+    background-color: $darkGray;
     animation: slideUp 0.7s ease-in-out;
     transform: translateY(21%);
   }

@@ -656,8 +656,10 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  letter-spacing: 1px;
   font-size: 2rem;
   background-color: #a7cced;
+  color: #1d3557;
   max-height: 90vh;
   -webkit-transition: background 0.2s linear;
   transition: background 0.2s linear;
@@ -709,6 +711,7 @@ footer h3 {
   width: 70%;
   margin-right: -130px;
   pointer-events: none;
+  position: relative;
 }
 
 .carousel-cell video {
@@ -726,9 +729,25 @@ footer h3 {
   cursor: pointer;
 }
 
+.projectTitle {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 1;
+  pointer-events: none;
+  font-size: 2.5rem;
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+}
+
 .is-selected {
   pointer-events: auto;
   z-index: 1;
+}
+
+.is-selected p {
+  display: block;
 }
 
 .is-selected video {
@@ -761,6 +780,10 @@ footer h3 {
           transform: translateY(-50%) scale(1.4);
 }
 
+.darkButtons {
+  color: #a7cced;
+}
+
 .flickity-prev-next-button.previous {
   left: 0;
 }
@@ -786,7 +809,7 @@ footer h3 {
   max-width: 1400px;
   min-height: 62vh;
   padding: 100px;
-  background-color: #ffe562;
+  background-color: #343a40;
   -webkit-animation: slideUp 0.7s ease-in-out;
           animation: slideUp 0.7s ease-in-out;
   -webkit-transform: translateY(21%);
@@ -1059,13 +1082,12 @@ h3 {
   padding: 10px;
   margin: 5px;
   font-size: 7.5rem;
-  color: #1d3557;
 }
 
 .skills ul li p {
   font-family: "Josefin Slab", serif;
   font-size: 1.6rem;
-  color: #1d3557;
+  letter-spacing: 2px;
   margin: 5px 0;
 }
 
@@ -1079,7 +1101,6 @@ h2 {
   font-family: "Josefin Slab", serif;
   font-weight: 700;
   font-size: 3.5rem;
-  color: #1d3557;
 }
 
 @media (max-width: 455px) {
@@ -1156,7 +1177,7 @@ h2 {
 .socialIcons ul li p {
   font-family: "Josefin Slab", serif;
   font-size: 1.6rem;
-  color: #1d3557;
+  letter-spacing: 2px;
 }
 
 .socialIcons ul li a {
@@ -1197,6 +1218,10 @@ h2 {
   }
 }
 
+.darkSocial ul li a {
+  color: #a7cced;
+}
+
 .contactForm {
   width: 60%;
 }
@@ -1228,14 +1253,23 @@ fieldset {
 input {
   padding: 15px;
   margin: 5px 0;
+  letter-spacing: 1px;
   width: 100%;
   border: none;
   background-color: transparent;
   border-bottom: 2px solid #1d3557;
+  color: #1d3557;
+}
+
+.darkInput,
+.darkTextarea {
+  color: #a7cced;
+  border-bottom: 2px solid #a7cced;
 }
 
 textarea {
   padding: 15px;
+  letter-spacing: 1px;
   resize: none;
   overflow: auto;
   outline: none;
@@ -1244,6 +1278,7 @@ textarea {
   border: none;
   border-bottom: 2px solid #1d3557;
   background-color: transparent;
+  color: #1d3557;
 }
 
 .buttonContainer {
@@ -1256,6 +1291,9 @@ textarea {
 }
 
 .submitButton {
+  font-family: "Josefin Slab", serif;
+  font-weight: 700;
+  letter-spacing: 5px;
   padding: 20px 0;
   width: 60%;
   margin: 40px;
@@ -1271,6 +1309,7 @@ textarea {
 .submitButton:hover, .submitButton:focus {
   background-color: #1d3557;
   color: #a7cced;
+  border: 2px solid #a7cced;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -1473,10 +1512,11 @@ h4 {
 
 .bodyDark {
   background-color: #1d3557;
+  color: #a7cced;
 }
 
 .darkFolder {
-  background-color: #ffe562;
+  background-color: #343a40;
 }
 
 .h1Dark,
@@ -1541,7 +1581,7 @@ h4 {
 }
 
 .fa-sun {
-  color: #ffea81;
+  color: #ff8800;
 }
 
 .dark {
