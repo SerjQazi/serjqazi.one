@@ -5,11 +5,10 @@
 
 .folderContainer {
   width: 100%;
-  height: calc(100vh - 310px);
-  border-radius: 50px 50px 15px 15px;
+  height: calc(100vh - 240px);
+  border-radius: 35px 35px 10px 10px;
   background-color: $lightYellow;
   transition: background 0.2s linear;
-  border: 1px solid $deepBlue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,6 +16,9 @@
   overflow: hidden;
   overflow-y: scroll;
   scrollbar-width: none;
+    @include mq (1100px) {
+      max-height: calc(100vh - 240px);
+    }
 }
 
 .aboutSection {
@@ -34,6 +36,14 @@
 
 .profileIntro {
   width: 55%;
+    p{
+      padding: 50px 100px;
+    }
+  @include mq (1369px){
+    p{
+      padding: 0;
+    }
+  }
   @include mq (995px) {
     width: 100%;
     p{
@@ -48,7 +58,6 @@
   @include mq (995px) {
     width: 100%;
   }
-
 }
 
 .profileImgContainer {
@@ -109,8 +118,11 @@
 h2 {
   font-family: $josefinSlab;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: $deepBlue;
+    @include mq (455px) {
+      font-size: 2.5rem;
+    }
 }
 
 .projectHeaderContainer {
@@ -164,8 +176,9 @@ h2 {
         }
       }
 
-      &:hover {
-        transform: scale(1.5);
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
       }
     }
   }
@@ -198,10 +211,11 @@ fieldset {
 
 input {
   padding: 15px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid $deepBlue;
   margin: 5px 0;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid $deepBlue;
 }
 
 textarea {
@@ -209,6 +223,7 @@ textarea {
   resize: none;
   overflow: auto;
   outline: none;
+  width: 100%;
   height: 150px;
   border: none;
   border-bottom: 2px solid $deepBlue;
@@ -259,22 +274,24 @@ textarea {
   content: '\f08c';
       color: #0466c8;
       border-bottom: 6px solid #0466c8;
+      pointer-events: none;
 }
 
 .socialIcons ul li:nth-child(2)::before {
   content: '\f09b';
       color: #ff8800;
       border-bottom: 6px solid #ff8800;
+      pointer-events: none;
 }
 
 .socialIcons ul li:nth-child(3)::before {
   content: '\f099';
       color: #3a86ff;
       border-bottom: 6px solid #3a86ff;
+      pointer-events: none;
 }
 
 .socialIcons ul li:hover::before,
 .socialIcons ul li:active::before {
   height: 100%;
-  // transform: scale(1.05);
 }

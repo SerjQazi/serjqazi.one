@@ -4,7 +4,9 @@ body {
   line-height: 1.6;
   font-size: 2rem;
   background-color: $lightBlue;
+  max-height: 90vh;
   transition: background 0.2s linear;
+  overflow: hidden;
 }
 
 .mainWrapper {
@@ -15,8 +17,11 @@ body {
 
 .smallWrapper {
   max-width: 1400px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
+    @include mq (455px) {
+      width: 90%;
+    }
 }
 
 footer {
@@ -25,7 +30,7 @@ footer {
     h3 {
       font-family: $josefinSlab;
       font-weight: 700;
-      font-size: 2.2rem;
+      font-size: 2rem;
         @include mq (455px) {
           font-size: 2rem;
         }
@@ -83,19 +88,19 @@ footer {
 
 .tingle-modal{
   background: rgba(0, 0, 0, 0.6);
-    overflow: hidden;
-    overflow-y: auto;
+    @include mq (455px) {
+      overflow: hidden;
+      overflow-y: auto;
+    }
 }
 
 .tingle-modal--visible {
   .tingle-modal-box {
-    border-radius: 50px 50px 15px 15px;
+    border-radius: 35px 35px 10px 10px;
     width: 90vw;
     max-width: 1400px;
     min-height: 62vh;
     padding: 100px;
-    // overflow: hidden;
-    // overflow-y: scroll;
     
       @media (max-width: 820px){
         padding: 0 20px;
@@ -108,7 +113,7 @@ footer {
 
     background-color: $darkYellow;
     animation: slideUp 0.7s ease-in-out;
-    transform: translateY(19%);
+    transform: translateY(21%);
   }
 }
 
@@ -120,7 +125,7 @@ footer {
 
   }
   to {
-    transform: translateY(19%);
+    transform: translateY(21%);
     opacity: 1;
   }
 }
