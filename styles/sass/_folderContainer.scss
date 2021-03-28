@@ -17,7 +17,7 @@
   overflow-y: scroll;
   scrollbar-width: none;
     @include mq (1100px) {
-      max-height: calc(97vh - 240px);
+      max-height: calc(96vh - 240px);
     }
 }
 

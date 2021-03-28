@@ -7,6 +7,10 @@ body {
   max-height: 90vh;
   transition: background 0.2s linear;
   overflow: hidden;
+
+  @include mq (455px) {
+    font-size: 1.7rem;
+  }
 }
 
 .mainWrapper {
