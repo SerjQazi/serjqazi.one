@@ -64,11 +64,23 @@ footer {
   position: absolute;
   top: 30px;
   left: 50px;
+  width: 40%;
   z-index: 1;
   pointer-events: none;
   font-size: 2.5rem;
   font-family: $josefinSlab;
   font-weight: 700;
+  @include mq (1024px){
+    top: 10px;
+    left: 15px;
+    font-size: 2rem;
+  } 
+  
+  @include mq (689px){
+    top: 5px;
+    left: 8px;
+    font-size: 1.2rem;
+  } 
 }
 
 .is-selected {
@@ -137,10 +149,17 @@ footer {
         padding: 0 10px;
       }
 
-    background-color: $darkGray;
     animation: slideUp 0.7s ease-in-out;
     transform: translateY(21%);
   }
+}
+
+.tingle-modal-box {
+  background-color: $lightYellow;
+}
+
+.darkModal {
+  background-color: $darkGray;
 }
 
 

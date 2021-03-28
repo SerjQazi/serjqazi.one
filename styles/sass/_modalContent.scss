@@ -4,7 +4,7 @@ h4 {
   font-family: $josefinSlab;
   font-weight: 700;
   font-size: 5.5rem;
-  color: $deepBlue;
+  // color: $deepBlue;
   @include mq (455px) {
       font-size: 3.4rem;
     }
@@ -79,11 +79,11 @@ align-items: flex-start;
         padding: 10px;
         margin: 5px ;
         font-size: 4rem;
-        color: $deepBlue;
+        // color: $deepBlue;
         p {
               font-family: $josefinSlab;
               font-size: 1.6rem;
-              color: $deepBlue;
+              // color: $deepBlue;
             }
         @include mq (455px) {
           font-size: 3.5rem;

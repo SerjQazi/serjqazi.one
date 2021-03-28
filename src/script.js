@@ -36,6 +36,8 @@ shModal.setContent(shContent);
 const sanctuaryHelper = document.querySelector(".shContainer");
 sanctuaryHelper.addEventListener("click", () => shModal.open());
 
+
+
 // darkMode toggle function
 const checkbox = document.getElementById("checkbox");
 
@@ -81,4 +83,7 @@ checkbox.onchange = () => {
 
   const textareaEl = document.querySelector("textarea");
   textareaEl.classList.toggle("darkTextarea");
+
+  const modalEl = document.querySelector(".tingle-modal-box");
+  modalEl.classList.toggle("darkModal")
 };
