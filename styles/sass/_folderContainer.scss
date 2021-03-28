@@ -5,11 +5,10 @@
 
 .folderContainer {
   width: 100%;
-  height: calc(100vh - 310px);
-  border-radius: 50px 50px 15px 15px;
+  height: calc(100vh - 240px);
+  border-radius: 35px 35px 10px 10px;
   background-color: $lightYellow;
   transition: background 0.2s linear;
-  border: 1px solid $deepBlue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +17,7 @@
   overflow-y: scroll;
   scrollbar-width: none;
     @include mq (1100px) {
-      max-height: calc(95vh - 310px);
+      max-height: calc(100vh - 240px);
     }
 }
 
@@ -37,6 +36,14 @@
 
 .profileIntro {
   width: 55%;
+    p{
+      padding: 50px 100px;
+    }
+  @include mq (1369px){
+    p{
+      padding: 0;
+    }
+  }
   @include mq (995px) {
     width: 100%;
     p{
@@ -111,8 +118,11 @@
 h2 {
   font-family: $josefinSlab;
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: $deepBlue;
+    @include mq (455px) {
+      font-size: 2.5rem;
+    }
 }
 
 .projectHeaderContainer {
@@ -166,8 +176,9 @@ h2 {
         }
       }
 
-      &:hover {
-        transform: scale(1.5);
+      &:hover,
+      &:focus {
+        transform: scale(1.2);
       }
     }
   }

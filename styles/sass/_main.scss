@@ -17,7 +17,7 @@ body {
 
 .smallWrapper {
   max-width: 1400px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
     @include mq (455px) {
       width: 90%;
@@ -30,7 +30,7 @@ footer {
     h3 {
       font-family: $josefinSlab;
       font-weight: 700;
-      font-size: 2.2rem;
+      font-size: 2rem;
         @include mq (455px) {
           font-size: 2rem;
         }
@@ -96,7 +96,7 @@ footer {
 
 .tingle-modal--visible {
   .tingle-modal-box {
-    border-radius: 50px 50px 15px 15px;
+    border-radius: 35px 35px 10px 10px;
     width: 90vw;
     max-width: 1400px;
     min-height: 62vh;
@@ -113,7 +113,7 @@ footer {
 
     background-color: $darkYellow;
     animation: slideUp 0.7s ease-in-out;
-    transform: translateY(19%);
+    transform: translateY(21%);
   }
 }
 
@@ -125,7 +125,7 @@ footer {
 
   }
   to {
-    transform: translateY(19%);
+    transform: translateY(21%);
     opacity: 1;
   }
 }
