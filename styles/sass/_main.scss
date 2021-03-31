@@ -4,8 +4,8 @@ body {
   line-height: 1.6;
   letter-spacing: 1px;
   font-size: 2rem;
-  background-color: $lightBlue;
-  color: $deepBlue;
+  background-color: #212529;
+  color: $lightBlue;
   max-height: 90vh;
   transition: background 0.2s linear;
   overflow: hidden;
@@ -15,33 +15,22 @@ body {
   }
 }
 
-.mainWrapper {
+.wrapper {
   max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
 
-.smallWrapper {
-  max-width: 1400px;
-  width: 90%;
-  margin: 0 auto;
-    @include mq (455px) {
-      width: 90%;
-    }
-}
+// .smallWrapper {
+//   max-width: 1400px;
+//   width: 90%;
+//   margin: 0 auto;
+//     @include mq (455px) {
+//       width: 90%;
+//     }
+// }
 
-footer {
-  display: block;
-  text-align: right;
-    h3 {
-      font-family: $josefinSlab;
-      font-weight: 700;
-      font-size: 2rem;
-        @include mq (455px) {
-          font-size: 2rem;
-        }
-    }
-}
+
 
 .carousel-cell {
   width: 70%;

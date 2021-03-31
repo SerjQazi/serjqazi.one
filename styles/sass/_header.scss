@@ -1,34 +1,151 @@
 @import 'variables';
 
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style: none;
+      text-transform: uppercase;
+      margin: 50px 15px;
+      font-size: 3rem;
+        a {
+          padding: 25px 0;
+
+        }
+    }
+  }
+}
+
 .headerContainer {
   display: flex;
   flex-direction: column;
-  align-items: left;
   justify-content: center;
-  position: relative;
+
+  height: calc(100vh - 350px);
 }
 
 h1 {
   font-family: $josefinSlab;
   font-weight: 700;
-  font-size: 6rem;
+  font-size: 12rem;
   line-height: 1.3;
   margin: 0;
   margin-top: 40px;
-  color: $deepBlue;
+  text-transform: uppercase;
   transition: color 0.2s ease-in-out;
-    @include mq (455px) {
-      font-size: 6rem;
-    }
 }
 
 h3 {
   font-family: $josefinSlab;
   font-weight: 700;
-  font-size: 2rem;
-  color: $deepBlue;
+  font-size: 8rem;
+  text-transform: uppercase;
   transition: color 0.2s ease-in-out;
-    @include mq (455px) {
-        font-size: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    hr {
+      color: darkturquoise; 
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    h5 {
+      font-family: $josefinSlab;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+}
+
+.socialIcons {
+  width: 40%;
+  margin-top: 30px;
+  ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    li {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      list-style: none;
+      padding: 10px;
+      margin: 10px ;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      p {
+        font-family: $josefinSlab;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
       }
+      a {
+        text-decoration: none;
+        color: $lightBlue;
+        i {
+          font-size: 3rem;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
+
+// Social Icons Hover Effect
+.socialIcons ul li::before {
+  font-family: fontAwesome;
+      position: absolute;
+      top: 1px;
+      font-size: 3rem;
+      height: 0;
+      overflow: hidden;
+      transition: 0.5s ease-in-out;
+}
+
+.socialIcons ul li::before {
+  pointer-events: none;
+}
+
+.socialIcons ul li:nth-child(1)::before {
+  content: '\f08c';
+  color: #2867B2;
+  border-bottom: 2px solid #2867B2;
+    
+}
+
+.socialIcons ul li:nth-child(2)::before {
+  content: '\f09b';
+  color: #f34f29;
+  border-bottom: 2px solid #f34f29;
+}
+
+.socialIcons ul li:nth-child(3)::before {
+  content: '\f099';
+  color: #1DA1F2;
+  border-bottom: 2px solid #1DA1F2;
+}
+
+.socialIcons ul li:nth-child(4)::before {
+  content: '\f23a';
+  color: #00ab6c;
+  border-bottom: 2px solid #00ab6c;
+}
+
+.socialIcons ul li:nth-child(5)::before {
+  content: '\f1c1';
+  color: #ef233c;
+  border-bottom: 2px solid #ef233c;
+}
+
+.socialIcons ul li:hover::before,
+.socialIcons ul li:active::before {
+  height: 100%;
 }
