@@ -865,10 +865,13 @@ nav ul {
 }
 
 nav ul li {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 900;
+  letter-spacing: 5px;
   list-style: none;
   text-transform: uppercase;
   margin: 50px 15px;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 nav ul li a {
@@ -880,6 +883,18 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainHeaderContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -887,36 +902,60 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nameContainer {
   position: relative;
+  min-width: 782px;
 }
 
 .nameContainer h2 {
+  position: absolute;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-size: 15rem;
   line-height: 1.3;
   margin: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
   text-transform: uppercase;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
 }
 
-.nameContainer .code {
-  position: absolute;
-  font-size: 6rem;
-  bottom: 48px;
-  left: 56%;
+.lineOneContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 50px;
 }
 
-.nameContainer .codeTxt {
-  position: absolute;
-  font-size: 6rem;
-  bottom: 48px;
-  left: 62%;
+.fontIconTwo {
+  margin-right: -18px;
+}
+
+.spanContainer {
+  font-size: 3.5rem;
+  min-width: 320px;
+  margin-left: 30px;
+}
+
+.spanContainer .fa-rotate-90 {
+  -webkit-transform: rotate(90deg) translate(-10%, 25%);
+          transform: rotate(90deg) translate(-10%, 25%);
+}
+
+.spanContainer .fa-slash {
+  font-size: 2.5rem;
 }
 
 .nameContainer h2:nth-child(1) {
@@ -952,14 +991,15 @@ main {
   }
 }
 
+.subHeaderContainer {
+  width: 100%;
+}
+
 h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
+  font-family: "Audiowide", cursive;
   font-size: 6rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
 }
 
 footer {
@@ -978,16 +1018,12 @@ footer {
           justify-content: center;
 }
 
-footer hr {
-  color: darkturquoise;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
 footer h5 {
-  font-family: "Josefin Slab", serif;
+  font-family: "Chakra Petch", sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 25px 0;
 }
 
 .socialIcons {
@@ -1003,6 +1039,8 @@ footer h5 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 1px solid;
+  padding: 1px;
 }
 
 .socialIcons ul li {
@@ -1018,8 +1056,8 @@ footer h5 {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 10px;
-  margin: 10px;
+  padding: 10px 0 0 10px;
+  margin: 0 10px;
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
@@ -1049,7 +1087,7 @@ footer h5 {
 
 .socialIcons ul li:hover p, .socialIcons ul li:focus p {
   color: #fff;
-  text-shadow: 0 0 10px #fff;
+  text-shadow: 0 0 5px #fff;
 }
 
 .socialIcons ul li::before {
