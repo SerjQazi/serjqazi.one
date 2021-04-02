@@ -678,6 +678,10 @@ body {
   margin: 0 auto;
 }
 
+.projectSection {
+  width: 100%;
+}
+
 .carousel-cell {
   width: 70%;
   margin-right: -130px;
@@ -867,11 +871,35 @@ nav ul {
 nav ul li {
   font-family: "Chakra Petch", sans-serif;
   font-weight: 900;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
   list-style: none;
   text-transform: uppercase;
-  margin: 50px 15px;
-  font-size: 2.5rem;
+  margin: 4vh 0.5vw;
+}
+
+nav ul li {
+  font-size: 1.8rem;
+  line-height: calc(1.8rem + 5px);
+}
+
+@media (min-width: 30rem) {
+  nav ul li {
+    font-size: calc(1.8rem + 0.7 * ((100vw - 30rem) / 130));
+    line-height: calc(calc(1.8rem + 0.7 * ((100vw - 30rem) / 130)) + 5px);
+  }
+}
+
+@media (min-width: 160rem) {
+  nav ul li {
+    font-size: 2.5rem;
+    line-height: calc(2.5rem + 5px);
+  }
+}
+
+@media (min-width: 1600px) {
+  nav ul li {
+    font-size: 2.5rem;
+  }
 }
 
 nav ul li a {
@@ -880,9 +908,19 @@ nav ul li a {
 
 main {
   height: calc(100vh - 350px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+section {
+  height: calc(100vh - 350px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -910,18 +948,60 @@ main {
 .nameContainer {
   position: relative;
   min-width: 782px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1257px) {
+  .nameContainer {
+    margin-bottom: 78px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nameContainer {
+    min-width: 686px;
+  }
 }
 
 .nameContainer h2 {
   position: absolute;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
-  font-size: 15rem;
   line-height: 1.3;
   margin: 0;
   text-transform: uppercase;
   -webkit-transform: translate(0%, -50%);
           transform: translate(0%, -50%);
+}
+
+.nameContainer h2 {
+  font-size: 8.2rem;
+  line-height: calc(8.2rem + 5px);
+}
+
+@media (min-width: 30rem) {
+  .nameContainer h2 {
+    font-size: calc(8.2rem + 6.8 * ((100vw - 30rem) / 130));
+    line-height: calc(calc(8.2rem + 6.8 * ((100vw - 30rem) / 130)) + 5px);
+  }
+}
+
+@media (min-width: 160rem) {
+  .nameContainer h2 {
+    font-size: 15rem;
+    line-height: calc(15rem + 5px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .nameContainer h2 {
+    font-size: 15rem;
+  }
 }
 
 .lineOneContainer {
@@ -936,7 +1016,14 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
   margin-bottom: 50px;
+}
+
+@media (max-width: 1257px) {
+  .lineOneContainer {
+    margin-bottom: 25px;
+  }
 }
 
 .fontIconTwo {
@@ -964,30 +1051,34 @@ main {
 }
 
 .nameContainer h2:nth-child(2) {
-  color: #03a9f4;
+  background: -webkit-gradient(linear, right top, left top, from(#30CFD0), to(#330867));
+  background: linear-gradient(to left, #30CFD0 0%, #330867 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-animation: animate 4s ease-in-out infinite;
           animation: animate 4s ease-in-out infinite;
 }
 
 @-webkit-keyframes animate {
   0%, 100% {
-    -webkit-clip-path: polygon(0 39%, 11% 38%, 24% 40%, 33% 48%, 45% 54%, 60% 54%, 74% 49%, 85% 39%, 100% 34%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 39%, 11% 38%, 24% 40%, 33% 48%, 45% 54%, 60% 54%, 74% 49%, 85% 39%, 100% 34%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 50%, 12% 48%, 26% 50%, 38% 58%, 50% 64%, 66% 64%, 79% 61%, 90% 57%, 100% 51%, 100% 100%, 0 100%);
+            clip-path: polygon(0 50%, 12% 48%, 26% 50%, 38% 58%, 50% 64%, 66% 64%, 79% 61%, 90% 57%, 100% 51%, 100% 100%, 0 100%);
   }
   50% {
-    -webkit-clip-path: polygon(0 57%, 11% 64%, 24% 68%, 39% 68%, 51% 63%, 57% 51%, 70% 43%, 86% 41%, 100% 43%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 57%, 11% 64%, 24% 68%, 39% 68%, 51% 63%, 57% 51%, 70% 43%, 86% 41%, 100% 43%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 58%, 9% 62%, 21% 64%, 33% 65%, 46% 61%, 58% 54%, 72% 49%, 88% 48%, 100% 52%, 100% 100%, 0 100%);
+            clip-path: polygon(0 58%, 9% 62%, 21% 64%, 33% 65%, 46% 61%, 58% 54%, 72% 49%, 88% 48%, 100% 52%, 100% 100%, 0 100%);
   }
 }
 
 @keyframes animate {
   0%, 100% {
-    -webkit-clip-path: polygon(0 39%, 11% 38%, 24% 40%, 33% 48%, 45% 54%, 60% 54%, 74% 49%, 85% 39%, 100% 34%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 39%, 11% 38%, 24% 40%, 33% 48%, 45% 54%, 60% 54%, 74% 49%, 85% 39%, 100% 34%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 50%, 12% 48%, 26% 50%, 38% 58%, 50% 64%, 66% 64%, 79% 61%, 90% 57%, 100% 51%, 100% 100%, 0 100%);
+            clip-path: polygon(0 50%, 12% 48%, 26% 50%, 38% 58%, 50% 64%, 66% 64%, 79% 61%, 90% 57%, 100% 51%, 100% 100%, 0 100%);
   }
   50% {
-    -webkit-clip-path: polygon(0 57%, 11% 64%, 24% 68%, 39% 68%, 51% 63%, 57% 51%, 70% 43%, 86% 41%, 100% 43%, 100% 100%, 0% 100%);
-            clip-path: polygon(0 57%, 11% 64%, 24% 68%, 39% 68%, 51% 63%, 57% 51%, 70% 43%, 86% 41%, 100% 43%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 58%, 9% 62%, 21% 64%, 33% 65%, 46% 61%, 58% 54%, 72% 49%, 88% 48%, 100% 52%, 100% 100%, 0 100%);
+            clip-path: polygon(0 58%, 9% 62%, 21% 64%, 33% 65%, 46% 61%, 58% 54%, 72% 49%, 88% 48%, 100% 52%, 100% 100%, 0 100%);
   }
 }
 
@@ -997,9 +1088,39 @@ main {
 
 h3 {
   font-family: "Audiowide", cursive;
-  font-size: 6rem;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: calc(1.2rem + 5px);
+}
+
+@media (min-width: 30rem) {
+  h3 {
+    font-size: calc(1.2rem + 4.8 * ((100vw - 30rem) / 130));
+    line-height: calc(calc(1.2rem + 4.8 * ((100vw - 30rem) / 130)) + 5px);
+  }
+}
+
+@media (min-width: 160rem) {
+  h3 {
+    font-size: 6rem;
+    line-height: calc(6rem + 5px);
+  }
+}
+
+@media (min-width: 1600px) {
+  h3 {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 479px) {
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 footer {
@@ -1027,7 +1148,6 @@ footer h5 {
 }
 
 .socialIcons {
-  width: 40%;
   margin-top: 30px;
 }
 
@@ -1056,7 +1176,7 @@ footer h5 {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
-  padding: 10px 0 0 10px;
+  padding: 11px 0;
   margin: 0 10px;
   cursor: pointer;
   -webkit-transition: 0.5s ease-in-out;
@@ -1093,7 +1213,7 @@ footer h5 {
 .socialIcons ul li::before {
   font-family: fontAwesome;
   position: absolute;
-  top: 1px;
+  top: 2px;
   font-size: 3rem;
   height: 0;
   overflow: hidden;

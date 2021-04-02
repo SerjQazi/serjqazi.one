@@ -10,7 +10,7 @@ const next = () => {
     setTimeout(next, 800);
   });
 
-  counter = (counter +1) % phrases.length;
+  counter = (counter + 1) % phrases.length;
 };
 
 next();
