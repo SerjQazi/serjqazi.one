@@ -1,6 +1,7 @@
 @import 'variables';
 
 nav {
+  padding-top: 10px;
   ul {
     display: flex;
     justify-content: center;
@@ -10,8 +11,10 @@ nav {
       letter-spacing: 3px;
       list-style: none;
       text-transform: uppercase;
-      margin: 4vh 0.5vw;
-      // font-size: 2.5rem;
+      margin: 1vh 0.5vw;
+      @include mq (479px) {
+      letter-spacing: 1px;
+    }
       @include fluid-font-size(1.8rem, 2.5rem);
 
       @include min-width {
@@ -24,19 +27,6 @@ nav {
   }
 }
 
-main {
-  height: calc(100vh - 350px);
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
-section {
-  height: calc(100vh - 350px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 .mainHeaderContainer {
   display: flex;
   flex-direction: column;
@@ -49,25 +39,33 @@ section {
   min-width: 782px;
   display: flex;
   justify-content: center;
-  @include mq (1257px){
-    margin-bottom: 78px;
-  }
-  @include mq (1200px) {
-    min-width: 686px;
-  }
+    @include mq (1274px){
+      min-width: 670px;
+    }
+    @include mq (1150px) {
+      margin-bottom: 78px;
+    }
+    @include mq (479px) {
+      min-width: 343px;
+    }
+
   h2 {
     position: absolute;
     font-family: $poppins;
     font-weight: 900;
-    @include fluid-font-size(8.2rem, 15rem);
-    line-height: 1.3;
-    margin: 0;
-    text-transform: uppercase;
-    transform: translate(0%, -50%);
+      @include fluid-font-size(6.5rem, 15rem);
+      line-height: 1.3;
+      margin: 0;
+      text-transform: uppercase;
+      transform: translate(0%, -50%);
 
-    @include min-width {
-      font-size: 15rem;
-    }
+      @include mq (600px) {
+        transform: translate(0%, 5%);
+      }
+
+      @include min-width {
+        font-size: 15rem;
+      }
   }
 }
 
@@ -78,7 +76,7 @@ section {
   align-items: center;
   width: 100%;
   margin-bottom: 50px;
-  @include mq (1257px) {
+  @include mq (1274px) {
     margin-bottom: 25px;
   }
 }
@@ -91,12 +89,15 @@ section {
   font-size: 3.5rem;
   min-width: 320px;
   margin-left: 30px;
-  .fa-rotate-90{
-    transform: rotate(90deg) translate(-10%, 25%);
-  }
-  .fa-slash {
-    font-size: 2.5rem;
-  }
+    @include mq (479px) {
+      font-size: 3rem;
+    }
+    .fa-rotate-90{
+      transform: rotate(90deg) translate(-10%, 25%);
+    }
+    .fa-slash {
+      font-size: 2.5rem;
+    }
 }
 
 .nameContainer h2:nth-child(1) {
@@ -128,123 +129,14 @@ section {
 
 h3 {
   font-family: $audiowide;
-  @include fluid-font-size(1.2rem, 6rem);
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  @include min-width {
-    font-size: 6rem;
-  }
-
-  @include mq (479px){
-    font-size: 1.8rem;
-  }
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-    h5 {
-      font-family: $chakraPetch;
-      font-weight: 700;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-      margin: 25px 0;
+    @include fluid-font-size(1.2rem, 6rem);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    @include min-width {
+      font-size: 6rem;
     }
-}
 
-.socialIcons {
-  // width: 40%;
-  margin-top: 30px;
-  ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid;
-    padding: 1px;
-    li {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      list-style: none;
-      padding: 11px 0;
-      margin: 0 10px ;
-      cursor: pointer;
-      transition: 0.5s ease-in-out;
-      p {
-        font-family: $josefinSlab;
-        font-size: 1.6rem;
-        letter-spacing: 2px;
-        transition: 0.9s ease-in-out;
-      }
-      a {
-        text-decoration: none;
-        color: $lightBlue;
-        i {
-          font-size: 3rem;
-        }
-      }
-
-      &:hover,
-      &:focus {
-        transform: scale(1.05);
-        p{
-          color: #fff;
-          text-shadow: 0 0 5px #fff;
-        }
-      }
+    @include mq (479px){
+      font-size: 1.5rem;
     }
-  }
-}
-
-// Social Icons Hover Effect
-.socialIcons ul li::before {
-  font-family: fontAwesome;
-  position: absolute;
-  top: 2px;
-  font-size: 3rem;
-  height: 0;
-  overflow: hidden;
-  transition: 0.5s ease-in-out;
-}
-
-.socialIcons ul li::before {
-  pointer-events: none;
-}
-
-.socialIcons ul li:nth-child(1)::before {
-  content: '\f08c';
-  color: #2867B2;
-  border-bottom: 2px solid #2867B2;
-}
-
-.socialIcons ul li:nth-child(2)::before {
-  content: '\f09b';
-  color: #f34f29;
-  border-bottom: 2px solid #f34f29;
-}
-
-.socialIcons ul li:nth-child(3)::before {
-  content: '\f099';
-  color: #1DA1F2;
-  border-bottom: 2px solid #1DA1F2;
-}
-
-.socialIcons ul li:nth-child(4)::before {
-  content: '\f23a';
-  color: #00ab6c;
-  border-bottom: 2px solid #00ab6c;
-}
-
-.socialIcons ul li:nth-child(5)::before {
-  content: '\f1c1';
-  color: #ef233c;
-  border-bottom: 2px solid #ef233c;
-}
-
-.socialIcons ul li:hover::before,
-.socialIcons ul li:active::before {
-  height: 100%;
 }

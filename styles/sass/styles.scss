@@ -1,11 +1,22 @@
 @import 'setup';
 @import './packageStyles/flickity';
 @import './packageStyles/tingle';
+
+
 @import 'variables';
 @import 'mixins';
+
+
 @import "main";
 @import "header";
+@import "about";
+@import "projects";
+@import "skills";
+@import "contacts";
+@import "footer";
+
+
 @import 'folderContainer';
 @import 'modalContent';
-@import 'darkMode';
+// @import 'darkMode';
 

@@ -6,13 +6,10 @@ body {
   font-size: 2rem;
   background-color: #212529;
   color: $lightBlue;
-  max-height: 90vh;
   transition: background 0.2s linear;
-  overflow: hidden;
-
-  @include mq (455px) {
-    font-size: 1.7rem;
-  }
+    @include mq (455px) {
+      font-size: 1.7rem;
+    }
 }
 
 .wrapper {
@@ -21,20 +18,47 @@ body {
   margin: 0 auto;
 }
 
+main {
+  height: calc(100vh - 210px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+section {
+  min-height: calc(100vh - 210px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .projectSection {
   width: 100%;
 }
-
-// .smallWrapper {
-//   max-width: 1400px;
-//   width: 90%;
-//   margin: 0 auto;
-//     @include mq (455px) {
-//       width: 90%;
-//     }
-// }
-
-
 
 .carousel-cell {
   width: 70%;

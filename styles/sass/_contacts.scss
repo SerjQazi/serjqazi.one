@@ -1,0 +1,71 @@
+@import 'variables';
+
+.contactForm {
+  width: 60%;
+  @include mq (1055px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  padding: 15px;
+  margin: 5px 0;
+  letter-spacing: 1px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid $lightBlue;
+  color: $lightBlue;
+}
+
+textarea {
+  padding: 15px;
+  letter-spacing: 1px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  width: 100%;
+  height: 150px;
+  border: none;
+  border-bottom: 2px solid $lightBlue;
+  background-color: transparent;
+  color: $lightBlue;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  font-family: $josefinSlab;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 20px 0;
+  width: 60%;
+  margin: 40px;
+  font-size: 2rem;
+  color: $deepBlue;
+  background-color: $lightBlue;
+  border: 2px solid $deepBlue;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+    &:hover, &:focus {
+      background-color: $deepBlue;
+      color: $lightBlue;
+      border: 2px solid $lightBlue;
+      transform: scale(1.02);
+    }
+    &:active {
+      transform: scale(1);
+    }
+}
