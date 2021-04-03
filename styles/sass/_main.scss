@@ -1,7 +1,7 @@
 body {
   font-family: $lato;
   font-weight: 400;
-  line-height: 1.6;
+  // line-height: 1.6;
   letter-spacing: 1px;
   font-size: 2rem;
   background-color: #212529;
@@ -22,6 +22,10 @@ main {
   height: calc(100vh - 210px);
   overflow-y: auto;
   overflow-x: hidden;
+
+  @include mq (479px) {
+      height: calc(100vh - 175px);
+    }
 }
 
 section {
@@ -30,116 +34,38 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+  // border: 2px solid;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.projectSection {
-  width: 100%;
-}
-
-.carousel-cell {
-  width: 70%;
-  margin-right: -130px ;
-  pointer-events: none;
-  position: relative;
-    video {
-      width: 100%;
-      border-radius: 20px;
-      opacity: 0.7;
-      transform: scale(0.65);
-      filter: blur(5px) brightness(0.6);
-      transition: opacity 0.3s, transform 0.7s, filter 0.3s;
-      cursor: pointer;
+  @include mq (479px) {
+      height: calc(100vh - 175px);
     }
 }
 
-.projectTitle {
-  display: none;
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  width: 40%;
-  z-index: 1;
-  pointer-events: none;
-  font-size: 2.5rem;
-  font-family: $josefinSlab;
-  font-weight: 700;
-  @include mq (1024px){
-    top: 10px;
-    left: 15px;
-    font-size: 2rem;
-  } 
-  
-  @include mq (689px){
-    top: 5px;
-    left: 8px;
-    font-size: 1.2rem;
-  } 
-}
 
-.is-selected {
-  pointer-events: auto;
-  z-index: 1;
-    p {
-      display: block;
-    }
-    video {
-      opacity: 1;
-      transform: scale(1);
-      filter: none;
-      box-shadow: 0px 0px 5px;
-    }
-}
 
-.flickity-prev-next-button {
-  width: 60px;
-  height: 60px;
-  color: $deepBlue;
-  background: transparent;
-  padding: 30px;
-  opacity: 0.6;
-  transition: opacity 0.3s, transform 0.3s ease-in-out;
-    &:hover {
-      background: transparent;
-      opacity: 1;
-      transform: translateY(-50%) scale(1.4);
-    }
-}
 
-.darkButtons {
-  color: $lightBlue;
-}
 
-.flickity-prev-next-button.previous { 
-  left: 0; 
-}
 
-.flickity-prev-next-button.next { 
-  right: 0; 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .tingle-modal{
   background: rgba(0, 0, 0, 0.6);
@@ -178,7 +104,6 @@ section {
 .darkModal {
   background-color: $darkGray;
 }
-
 
 @keyframes slideUp {
   from {

@@ -38,3 +38,27 @@
         }
     }
 }
+
+@mixin fluid-font-size-profile($min-font-size, $max-font-size, $min-vw: 30rem, $max-vw: 160rem) {
+    
+    $u1: unit($min-font-size);
+    $u2: unit($max-font-size);
+    $u3: unit($min-vw);
+    $u4: unit($max-vw);
+
+    @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+        & {
+            font-size: $min-font-size;
+            line-height: calc(#{$min-font-size} + 18px);
+            @media (min-width: $min-vw) {
+                $fluid-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+                font-size: $fluid-size;
+                line-height: calc(#{$fluid-size} + 18px);
+            }
+            @media (min-width: $max-vw) {
+                font-size: $max-font-size;
+                line-height: calc(#{$max-font-size} + 18px);
+            }
+        }
+    }
+}

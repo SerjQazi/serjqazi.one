@@ -5,23 +5,34 @@ nav {
   ul {
     display: flex;
     justify-content: center;
+    @include mq (479px) {
+          .bar {
+            display: none;
+          }
+        }
     li {
       font-family: $chakraPetch;
-      font-weight: 900;
+      // font-weight: 900;
       letter-spacing: 3px;
       list-style: none;
       text-transform: uppercase;
       margin: 1vh 0.5vw;
-      @include mq (479px) {
-      letter-spacing: 1px;
-    }
-      @include fluid-font-size(1.8rem, 2.5rem);
-
-      @include min-width {
-        font-size: 2.5rem;
+      @include fluid-font-size(1.7rem, 2.5rem);
+      a {
+        text-decoration: none;
+        color: $lightBlue;
+        border-bottom: 1px solid transparent;
+        &:hover {
+          border-bottom: 1px solid $lightBlue;
+        }
       }
-        a {
-          padding: 25px 0;
+        @include mq (479px) {
+          letter-spacing: 1px;
+          margin: 1vh 1.2vw;
+        }
+
+        @include min-width {
+          font-size: 2.5rem;
         }
     }
   }
@@ -39,6 +50,7 @@ nav {
   min-width: 782px;
   display: flex;
   justify-content: center;
+  margin-bottom: 5vh;
     @include mq (1274px){
       min-width: 670px;
     }
@@ -75,10 +87,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 50px;
-  @include mq (1274px) {
-    margin-bottom: 25px;
-  }
+  margin-bottom: 2vh;
 }
 
 .fontIconTwo {
@@ -137,6 +146,6 @@ h3 {
     }
 
     @include mq (479px){
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
 }

@@ -26,13 +26,15 @@
       <header>
         <nav>
           <ul>
-            <li><a href=""></a>Home</li>
-            <li>|</li>
-            <li><a href=""></a>Projects</li>
-            <li>|</li>
-            <li><a href=""></a>Skills</li>
-            <li>|</li>
-            <li><a href=""></a>Contact</li>
+            <li><a href="#home">Home</a></li>
+            <li class="bar">|</li>
+            <li><a href="#about">About</a></li>
+            <li class="bar">|</li>
+            <li><a href="#projects">Projects</a></li>
+            <li class="bar">|</li>
+            <li><a href="#skills">Skills</a></li>
+            <li class="bar">|</li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -40,7 +42,7 @@
     <!-- end of wrapper -->
 
     <main>
-      <section>
+      <section id="home">
 
         <div class="wrapper">
           <div class="mainHeaderContainer">
@@ -77,140 +79,187 @@
         <!-- end of wrapper -->
       </section>
 
-      <section>
+      <section id="about">
+        <div class="wrapper">
+          <div class="aboutHeader">
+            <h2>About Me</h2>
+          </div>
+
+          <div class="aboutSection">
+            <div class="profileTxt">
+              <p>I'm a web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of web-development. I am passionate about creating impactful web applications using React, JavaScript, HTML and SASS. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.</p>
+            </div>
+
+            <div class="profileImg">
+              <img src="./assets/profile-pic.jpg" alt="">
+            </div>
+
+          </div>
+            <!-- end of aboutSection -->
+        </div>
+          <!-- end of wrapper -->
+      </section>
+
+        <section id="projects">
           <div class="wrapper">
-          <div class="profileIntro">
-                  <h2>about me</h2>
-                  <p>I'm a web-developer with a passion for photography and design based out of Guelph, Ontario. Fueled mostly by coffee, I challenge myself everyday to master the tools and concepts of web-development. I am passionate about creating impactful web applications using React, JavaScript, HTML and SASS. I find myself focused on minimalist clean designs that provide a playful and engaging user experience.</p>
-                </div>
-                <div class="imgSection">
-                  
-                  <div class="profileImgContainer">
-                    <img class="profilePic" src="./assets/profile-pic.jpg" alt="">
-                    </div>
-                  </div>
+
+            <div class="projectHeader">
+              <h2>My Projects</h2>
+            </div>
+
+            <div class="main-carousel">
+
+              <div class="rtContainer carousel-cell">
+              <p class="projectTitle">Robo Trivia</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/rt-dark.mp4"/>
+              </video>
+              </div>
+
+              <div class="fmbContainer carousel-cell">
+              <p class="projectTitle">Find My Beer</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/fmb-dark-wide.mp4"/>
+              </video>
+              </div>
+
+              <div class="rlContainer carousel-cell">
+              <p class="projectTitle">Recipe Lookup</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/rl-dark.mp4"/>
+              </video>
+              </div>
+
+              <div class="shContainer carousel-cell">
+              <p class="projectTitle">Sanctuary Helper</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/sh-dark-wide.mp4"/>
+              </video>
+              </div>
+
+            </div>
+
+            <div class="mobileView">
+
+              <div class="projectContainer">
+              <p>Robo Trivia</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/rt-dark.mp4"/>
+              </video>
+              </div>
+
+              <div class="projectContainer">
+              <p>Find My Beer</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/fmb-dark-wide.mp4"/>
+              </video>
+              </div>
+
+              <div class="projectContainer">
+              <p>Recipe Lookup</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/rl-dark.mp4"/>
+              </video>
+              </div>
+
+              <div class="projectContainer">
+              <p>Sanctuary Helper</p>
+
+              <video class="dark" id="projectVideo" autoplay loop muted playsinline>
+              <source src="./assets/project-gifs/sh-dark-wide.mp4"/>
+              </video>
+              </div>
+            </div>
+
+            </div>  
+              <!-- end of projectVideoContainer -->
+          </div>
         </section>
 
-        <section>
-          <div class="wrapper">
-            <div class="projectSection">
-  
-              <div class="projectHeaderContainer">
-        <h2>my projects</h2>
-      </div>
-      
-        <div class="projectVideoContainer main-carousel">
-    
-          <div class="rtContainer carousel-cell">
-            <p class="projectTitle">Robo Trivia</p>
-            <video class="light" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/rt-light.mp4"/>
-            </video>
-    
-            <video class="dark" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/rt-dark.mp4"/>
-            </video>
+        <section id="skills">
+          <div class="skillsHeader">
+            <h2>Skills</h2>
+          </div>
+
+          <div class="skills">
+            <ul>
+
+              <li>
+                <i class="devicon-react-original"></i>
+                <p>React</p>
+              </li>
+
+              <li>
+                <i class="devicon-javascript-plain"></i>
+                <p>JavaScript</p>
+              </li>
+
+              <li>
+                <i class="devicon-jquery-plain"></i>
+                <p>jQuery</p>
+              </li>
+
+              <li>
+                  <i class="devicon-html5-plain"></i>
+                  <p>HTML5</p>
+              </li>
+
+              <li>
+                <i class="devicon-css3-plain"></i>
+                <p>CSS3</p>
+              </li>
+
+              <li>
+                <i class="devicon-sass-original"></i>
+                <p>SASS</p>
+              </li>
+
+              <li>
+                <i class="devicon-github-original"></i>
+                <p>GitHub</p>
+              </li>
+
+              <li>
+                <i class="devicon-firebase-plain"></i></i>
+                <p>Firebase</p>
+              </li>
+
+            </ul>
+          </div>
+
+        </section>
+
+        <section id="contact">
+          <div class="contactHeader">
+            <h2>Contact</h2>
           </div>
           
-          <div class="fmbContainer carousel-cell">
-            <p class="projectTitle">Find My Beer</p>
-            <video class="light" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/fmb-light-wide.mp4"/>
-            </video>
-    
-            <video class="dark" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/fmb-dark-wide.mp4"/>
-            </video>
-          </div>
-    
-          <div class="rlContainer carousel-cell">
-            <p class="projectTitle">Recipe Lookup</p>
-            <video class="light" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/rl-light.mp4"/>
-            </video>
-    
-            <video class="dark" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/rl-dark.mp4"/>
-            </video>
-          </div>
-    
-          <div class="shContainer carousel-cell">
-            <p class="projectTitle">Sanctuary Helper</p>
-            <video class="light" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/sh-light-wide.mp4"/>
-            </video>
-    
-            <video class="dark" id="projectVideo" autoplay loop muted playsinline>
-              <source src="./assets/project-gifs/sh-dark-wide.mp4"/>
-            </video>
-          </div>
-    
-        </div>  
-          <!-- end of projectVideoContainer -->
-            </div>  
-          </div>
-        </section>
-
-        <section>
-          <div class="skillsHeaderContainer">
-      <h2>skills</h2>
-    </div>
-
-    <div class="skills">
-      <ul>
-        <li>
-          <i class="devicon-react-original"></i>
-          <p>React</p>
-        </li>
-        <li>
-          <i class="devicon-javascript-plain"></i>
-          <p>JavaScript</p>
-        </li>
-        <li>
-          <i class="devicon-jquery-plain"></i>
-          <p>jQuery</p>
-        </li>
-        <li>
-          <i class="devicon-html5-plain"></i>
-          <p>HTML5</p>
-        </li>
-        <li>
-          <i class="devicon-css3-plain"></i>
-          <p>CSS3</p>
-        </li>
-        <li>
-          <i class="devicon-sass-original"></i>
-          <p>SASS</p>
-        </li>
-        <li>
-          <i class="devicon-github-original"></i>
-          <p>GitHub</p>
-        </li>
-        <li>
-          <i class="devicon-firebase-plain"></i></i>
-          <p>Firebase</p>
-        </li>
-      </ul>
-    </div>
-        </section>
-
-        <section>
           <form class="contactForm" name="contact" netlify>
-                      <fieldset>
-                        <label class="sr-only" for="name">Enter your name</label>
-                        <input type="text" name="name" id="name" placeholder="name" required>
+            <fieldset>
+              
+              <label class="sr-only" for="name">Enter your name</label>
+              <input type="text" name="name" id="name" placeholder="name" required>
 
-                        <label class="sr-only" for="email">Enter your email address</label>
-                        <input type="email" name="email" id="email" placeholder="email" required>
+              <label class="sr-only" for="email">Enter your email address</label>
+              <input type="email" name="email" id="email" placeholder="email" required>
 
-                        <label class="sr-only" for="message">Enter your message</label>
-                        <textarea name="message" id="message" placeholder="message" required></textarea>
-                        <div class="buttonContainer">
-                          <button class="submitButton" type="submit">Send</button>
-                        </div>
-                      </fieldset>
-                    </form>
-                  </div>
+              <label class="sr-only" for="message">Enter your message</label>
+              <textarea name="message" id="message" placeholder="message" required></textarea>
+              
+              <div class="buttonContainer">
+              <button class="submitButton" type="submit">Send</button>
+              </div>
+            
+            </fieldset>
+          
+          </form>
         </section>
     </main>
 

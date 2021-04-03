@@ -1,7 +1,14 @@
 @import 'variables';
 
-.skillsHeaderContainer {
-  margin-top: 50px;
+.skillsHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6vh;
+  text-transform: uppercase;
+
+  @include mq (479px) {
+      margin-bottom: 3vh;
+    }
 }
 
 .skills {
@@ -22,7 +29,7 @@
         list-style: none;
         padding: 10px;
         margin: 5px ;
-        font-size: 7.5rem;
+        @include fluid-font-size(7rem, 10rem);
         
           p {
             font-family: $josefinSlab;
