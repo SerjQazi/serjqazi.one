@@ -6,6 +6,7 @@ body {
   background-color: #212529;
   color: $lightBlue;
   transition: background 0.2s linear;
+  overflow-y: hidden;
 }
 
 .wrapper {
@@ -15,42 +16,21 @@ body {
 }
 
 main {
-  height: calc(100vh - 143px);
+  // height: calc(100vh - 143px);
+  height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  
-  @include mq (812px) {
-      height: calc(100vh - 181px);
-    }
-
-    @include mq (455px) {
-      height: calc(100vh - 135px);
-    }
-
-    @media (max-height: 455px) {
-      height: calc(100vh - 120px);
-    }
+  padding: 5vh 0;
 }
 
 section {
-  min-height: calc(100vh - 143px);
+  // min-height: calc(100vh - 143px);
+  // margin-top: -10vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-
-    @include mq (768px) {
-      min-height: calc(100vh - 182px);
-    }
-
-  @include mq (455px) {
-      height: calc(100vh - 140px);
-    }
-
-    @media (max-height: 455px) {
-      height: calc(100vh - 120px);
-    }
 }
 
 .sectionTxt {
