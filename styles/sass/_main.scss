@@ -16,7 +16,6 @@ body {
 }
 
 main {
-  // height: calc(100vh - 143px);
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
@@ -24,9 +23,7 @@ main {
 }
 
 section {
-  // min-height: calc(100vh - 143px);
-  // margin-top: -10vh;
-  height: 100vh;
+  height: 98vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
