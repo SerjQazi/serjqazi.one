@@ -38,6 +38,7 @@
 
     @media (max-height: 455px) {
       width: 100%;
+      justify-content: space-around;
     }
       li {
         display: flex;
@@ -53,7 +54,7 @@
         }
 
         @media (max-height: 455px) {
-          font-size: 2rem ;
+          font-size: 4.5rem ;
           padding: 0;
           line-height: 1.6;
         }
