@@ -3,7 +3,7 @@
 .skillsHeader {
   display: flex;
   justify-content: center;
-  // margin-bottom: 6vh;
+  margin-bottom: 5vh;
   text-transform: uppercase;
 
   @include mq (479px) {
