@@ -1195,15 +1195,6 @@ h3 {
   width: 70%;
 }
 
-@media (max-width: 455px) {
-  .rtContainer,
-  .fmbContainer,
-  .rlContainer,
-  .shContainer {
-    width: 50%;
-  }
-}
-
 @media (max-height: 455px) {
   .rtContainer,
   .fmbContainer,
@@ -1297,7 +1288,7 @@ h3 {
   right: 0;
 }
 
-@media (max-width: 479px) {
+@media (max-width: 455px) {
   .main-carousel {
     display: none;
   }
@@ -1748,6 +1739,12 @@ footer {
   overflow: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+}
+
+@media (max-width: 1920px) {
+  .socialIcons ul li::before {
+    top: -1px;
+  }
 }
 
 @media (max-height: 455px) {
