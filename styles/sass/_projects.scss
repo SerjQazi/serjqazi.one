@@ -33,9 +33,9 @@
   position: relative;
   width: 70%;
 
-  // @include mq (455px) {
-  //   width: 50%;
-  // }
+  @include mq (455px) {
+    width: 50%;
+  }
 
   @media (max-height: 455px) {
     width: calc(100% / 4);

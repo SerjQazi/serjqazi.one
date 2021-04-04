@@ -5,7 +5,7 @@ const element = document.querySelector(".main-carousel");
 const flkty = new Flickity(element, {
   contain: true,
   wrapAround: true,
-  // autoPlay: true,
+  autoPlay: true,
 });
 
 // tingle modal options

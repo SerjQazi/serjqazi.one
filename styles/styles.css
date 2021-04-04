@@ -1195,6 +1195,15 @@ h3 {
   width: 70%;
 }
 
+@media (max-width: 455px) {
+  .rtContainer,
+  .fmbContainer,
+  .rlContainer,
+  .shContainer {
+    width: 50%;
+  }
+}
+
 @media (max-height: 455px) {
   .rtContainer,
   .fmbContainer,
