@@ -3,7 +3,7 @@
 .skillsHeader {
   display: flex;
   justify-content: center;
-  margin-bottom: 6vh;
+  // margin-bottom: 6vh;
   text-transform: uppercase;
 
   @include mq (479px) {
@@ -34,6 +34,10 @@
     @media (max-width: 1024px),
            (max-height: 1024px) {
       width: 70%;
+    }
+
+    @include mq (455px) {
+      width: 90%;
     }
 
     @media (max-height: 455px) {
