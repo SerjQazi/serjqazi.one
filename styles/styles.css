@@ -677,7 +677,7 @@ main {
 }
 
 section {
-  height: 95vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
