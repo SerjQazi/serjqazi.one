@@ -1,0 +1,69 @@
+@import 'variables';
+
+.aboutHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+  text-transform: uppercase;
+}
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+
+  @include mq (1225px) {
+    flex-direction: column;
+  }
+
+  @media (max-height: 455px) {
+    flex-direction: row;
+  }
+  
+  .profileTxt {
+    width: 70%;
+    padding: 3vh 3vw;
+    @include fluid-font-size-profile(1.8rem, 2.5rem);
+    letter-spacing: 2.5px;
+
+    @media (max-height: 768px) {
+      font-size: 1.6rem;
+    }
+
+    @include mq (1125px) {
+      width: 100%;
+      padding: 4vh, 4vw;
+    }
+    
+    @include mq (479px) {
+      width: 100%;
+      padding: 4vh, 4vw;
+      line-height: 1.3;
+    }
+
+    @media (max-height: 455px) {
+      line-height: 1.3;
+      padding-left: 0;
+    }
+
+
+  }
+  
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .profileImg {
+    width: 30%;
+    border-radius: 50%;
+    @media (max-height: 768px) {
+      width: 25%;
+    }
+    
+    @include mq (479px) {
+      width: 45%;
+      
+    }
+  }
+
+}

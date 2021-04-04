@@ -1,0 +1,100 @@
+@import 'variables';
+
+.contactHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3vh;
+  text-transform: uppercase;
+
+  @media (max-height: 455px) {
+    margin-bottom: 0;
+  }
+}
+
+.contactForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+    @include mq (1024px) {
+      width: 80%;
+    }
+  }
+  
+input {
+  padding: 15px;
+  margin: 5px 0;
+  letter-spacing: 1px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid $lightBlue;
+  color: $lightBlue;
+  @media (max-height: 455px) {
+    font-size: 1.4rem ;
+    padding: 0;
+    line-height: 1.6;
+  }
+}
+
+textarea {
+  padding: 15px;
+  letter-spacing: 1px;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  width: 100%;
+  height: 25vh;
+  border: none;
+  border-bottom: 2px solid $lightBlue;
+  background-color: transparent;
+  color: $lightBlue;
+  @media (max-height: 455px) {
+    font-size: 1.4rem ;
+    padding: 0;
+    line-height: 1.6;
+    height: 20vh;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton {
+  font-family: $josefinSlab;
+  font-weight: 700;
+  letter-spacing: 5px;
+  padding: 14px 18px;
+  width: 200px;
+  margin: 40px;
+  color: $deepBlue;
+  background-color: $lightBlue;
+  border: 2px solid $deepBlue;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+
+  @media (max-height: 455px) {
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2rem;
+    width: 100px;
+  }
+
+    &:hover, &:focus {
+      background-color: $deepBlue;
+      color: $lightBlue;
+      border: 2px solid $lightBlue;
+      transform: scale(1.02);
+    }
+    &:active {
+      transform: scale(1);
+    }
+}

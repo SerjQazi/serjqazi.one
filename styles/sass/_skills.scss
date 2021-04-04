@@ -1,0 +1,73 @@
+@import 'variables';
+
+.skillsHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6vh;
+  text-transform: uppercase;
+
+  @include mq (479px) {
+      margin-bottom: 3vh;
+    }
+}
+
+.skills {
+  min-width: 345px;
+    @include mq (455px) {
+      min-width: 100%;
+    }
+
+    @media (max-width: 1024px),
+           (max-height: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1024px),
+           (max-height: 1024px) {
+      width: 70%;
+    }
+
+    @media (max-height: 455px) {
+      width: 100%;
+    }
+      li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 10px;
+        margin: 5px ;
+        @include fluid-font-size(7rem, 10rem);
+
+        @include mq (455px) {
+          line-height: 1.2;
+        }
+
+        @media (max-height: 455px) {
+          font-size: 2rem ;
+          padding: 0;
+          line-height: 1.6;
+        }
+        
+          p {
+            font-family: $josefinSlab;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
+            margin: 5px 0;
+          }
+
+        @include mq (455px) {
+          font-size: 5rem;
+        }
+      }
+  }
+}

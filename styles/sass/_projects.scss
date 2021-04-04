@@ -1,0 +1,174 @@
+@import 'variables';
+
+.projectHeader {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6vh;
+  text-transform: uppercase;
+
+  @include mq (479px) {
+      margin-bottom: 2vh;
+    }
+}
+
+.carousel-cell {
+  width: 90%;
+  margin-right: -130px ;
+  pointer-events: none;
+  position: relative;
+    video {
+      width: 100%;
+      border-radius: 20px;
+      opacity: 0;
+      transform: scale(0.1);
+      transition: opacity 0.3s, transform 0.7s;
+      cursor: pointer;
+    }
+}
+
+.rtContainer,
+.fmbContainer,
+.rlContainer,
+.shContainer {
+  position: relative;
+  width: 70%;
+
+  @include mq (455px) {
+    width: 60%;
+  }
+
+  @media (max-height: 455px) {
+    width: calc(100% / 4);
+  }
+}
+
+.projectTitle {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 40%;
+  z-index: 1;
+  pointer-events: none;
+  font-size: 2.5rem;
+  font-family: $josefinSlab;
+  font-weight: 700;
+    @include mq (1024px){
+      top: 10px;
+      left: 15px;
+      font-size: 2rem;
+    } 
+    
+    @include mq (689px){
+      top: 5px;
+      left: 8px;
+      font-size: 1.2rem;
+    } 
+
+    
+}
+
+.is-selected {
+  pointer-events: auto;
+  z-index: 1;
+    p {
+      display: block;
+    }
+    video {
+      opacity: 1;
+      transform: scale(1);
+      filter: none;
+    }
+}
+
+.flickity-page-dots .dot {
+  width: 16px;
+  height: 16px;
+  border: 1px solid $lightBlue
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: $lightBlue;
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  color: $lightBlue;
+  background: transparent;
+  padding: 30px;
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s ease-in-out;
+    &:hover {
+      background: transparent;
+      opacity: 1;
+      transform: translateY(-50%) scale(1.4);
+    }
+}
+
+.flickity-prev-next-button.previous { 
+  left: 0; 
+}
+
+.flickity-prev-next-button.next { 
+  right: 0; 
+}
+
+@include mq (479px) {
+  .main-carousel {
+    display: none;
+  }
+}
+
+@media (max-height: 455px) {
+  .main-carousel {
+    display: none;
+  }
+} 
+
+.mobileView {
+  display: none;
+
+    p{
+      position: absolute;
+      font-size: 1rem;
+      bottom: 18px;
+      right: 18px;
+
+      @media (max-height: 455px) {
+      bottom: -5px;
+      right: 52px;
+    }
+
+    }
+
+    @include mq (479px) {
+      display: block;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        video {
+          width: 90%;
+          margin: 10px;
+          
+        }
+    }
+    @media (max-height: 455px) {
+      display: block;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        video {
+          width: 90%;
+          margin: 10px;
+          
+        }
+    }
+  }
+
+.projectContainer {
+  position: relative;
+  width: 70%;
+}

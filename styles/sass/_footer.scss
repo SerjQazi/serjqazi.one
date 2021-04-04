@@ -1,0 +1,113 @@
+@import 'variables';
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons {
+  margin: 10px;
+  ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    li {
+      position: relative;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 20px ;
+      cursor: pointer;
+      transition: 0.5s ease-in-out;
+      @include mq (455px) {
+        margin: 5px;
+      }
+      
+      p {
+        font-family: $josefinSlab;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        transition: 0.9s ease-in-out;
+        @media (max-height: 455px) {
+            font-size: 1.1rem;
+          }
+      }
+      a {
+        text-decoration: none;
+        color: $lightBlue;
+        i {
+          font-size: 2.5rem;
+          @media (max-height: 455px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+        p{
+          color: #fff;
+          text-shadow: 0 0 5px #fff;
+        }
+      }
+    }
+  }
+}
+
+// Social Icons Hover Effect
+.socialIcons ul li::before {
+  font-family: fontAwesome;
+  position: absolute;
+  top: -2px;
+  font-size: 2.5rem;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  @media (max-height: 455px) {
+    font-size: 1.6rem;
+    top: 5px;
+  }
+}
+
+.socialIcons ul li::before {
+  pointer-events: none;
+}
+
+.socialIcons ul li:nth-child(1)::before {
+  content: '\f08c';
+  color: #2867B2;
+  border-bottom: 2px solid #2867B2;
+}
+
+.socialIcons ul li:nth-child(2)::before {
+  content: '\f09b';
+  color: #f34f29;
+  border-bottom: 2px solid #f34f29;
+}
+
+.socialIcons ul li:nth-child(3)::before {
+  content: '\f099';
+  color: #1DA1F2;
+  border-bottom: 2px solid #1DA1F2;
+}
+
+.socialIcons ul li:nth-child(4)::before {
+  content: '\f23a';
+  color: #00ab6c;
+  border-bottom: 2px solid #00ab6c;
+}
+
+.socialIcons ul li:nth-child(5)::before {
+  content: '\f1c1';
+  color: #ef233c;
+  border-bottom: 2px solid #ef233c;
+}
+
+.socialIcons ul li:hover::before,
+.socialIcons ul li:active::before {
+  height: 100%;
+}
