@@ -1541,6 +1541,12 @@ fieldset {
   }
 }
 
+@media (max-width: 455px) {
+  fieldset {
+    width: 100%;
+  }
+}
+
 input {
   padding: 15px;
   margin: 5px 0;
