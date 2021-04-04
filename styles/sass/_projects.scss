@@ -34,7 +34,7 @@
   width: 70%;
 
   @include mq (455px) {
-    width: 60%;
+    width: 50%;
   }
 
   @media (max-height: 455px) {
@@ -142,7 +142,7 @@
 
     }
 
-    @include mq (479px) {
+    @include mq (455px) {
       display: block;
       width: 100%;
       display: flex;

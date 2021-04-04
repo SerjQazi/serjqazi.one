@@ -677,7 +677,7 @@ main {
 }
 
 section {
-  height: 95vh;
+  height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,7 +1196,7 @@ h3 {
   .fmbContainer,
   .rlContainer,
   .shContainer {
-    width: 60%;
+    width: 50%;
   }
 }
 
@@ -1323,7 +1323,7 @@ h3 {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 455px) {
   .mobileView {
     display: block;
     width: 100%;
