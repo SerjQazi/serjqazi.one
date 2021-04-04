@@ -1,15 +1,11 @@
 body {
   font-family: $lato;
   font-weight: 400;
-  // line-height: 1.6;
   letter-spacing: 1px;
   font-size: 2rem;
   background-color: #212529;
   color: $lightBlue;
   transition: background 0.2s linear;
-    @include mq (455px) {
-      font-size: 1.7rem;
-    }
 }
 
 .wrapper {
@@ -19,100 +15,47 @@ body {
 }
 
 main {
-  height: calc(100vh - 210px);
+  height: calc(100vh - 143px);
   overflow-y: auto;
   overflow-x: hidden;
+  
+  @include mq (812px) {
+      height: calc(100vh - 181px);
+    }
 
-  @include mq (479px) {
-      height: calc(100vh - 175px);
+    @include mq (455px) {
+      height: calc(100vh - 135px);
+    }
+
+    @media (max-height: 455px) {
+      height: calc(100vh - 120px);
     }
 }
 
 section {
-  min-height: calc(100vh - 210px);
+  min-height: calc(100vh - 143px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // border: 2px solid;
+  border: 1px solid;
 
-  @include mq (479px) {
-      height: calc(100vh - 175px);
+    @include mq (768px) {
+      min-height: calc(100vh - 182px);
+    }
+
+  @include mq (455px) {
+      height: calc(100vh - 140px);
+    }
+
+    @media (max-height: 455px) {
+      height: calc(100vh - 120px);
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tingle-modal{
-  background: rgba(0, 0, 0, 0.6);
-    @include mq (455px) {
-      overflow: hidden;
-      overflow-y: auto;
+.sectionTxt {
+  font-family: $josefinSlab;
+    @media (max-height: 768px) {
+      font-size: 2rem;
     }
-}
-
-.tingle-modal--visible {
-  .tingle-modal-box {
-    border-radius: 35px 35px 10px 10px;
-    width: 90vw;
-    max-width: 1400px;
-    min-height: 62vh;
-    padding: 100px;
-    
-      @media (max-width: 820px){
-        padding: 0 20px;
-      }
-      @media (max-width: 540px){
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-      }
-
-    animation: slideUp 0.7s ease-in-out;
-    transform: translateY(21%);
-  }
-}
-
-.tingle-modal-box {
-  background-color: $lightYellow;
-}
-
-.darkModal {
-  background-color: $darkGray;
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(150%);
-    opacity: 0.5;
-
-  }
-  to {
-    transform: translateY(21%);
-    opacity: 1;
-  }
 }

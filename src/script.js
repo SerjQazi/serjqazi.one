@@ -22,20 +22,28 @@ const rlModal = new tingle.modal(modalOptions);
 const shModal = new tingle.modal(modalOptions);
 
 rtModal.setContent(rtContent);
-const roboTrivia = document.querySelector(".rtContainer");
-roboTrivia.addEventListener("click", () => rtModal.open());
+const roboTrivia = document.querySelectorAll(".rtContainer");
+roboTrivia.forEach((rtProject) =>{
+  rtProject.addEventListener("click", () => rtModal.open());
+});
 
 fmbModal.setContent(fmbContent);
-const findMyBeer = document.querySelector(".fmbContainer");
-findMyBeer.addEventListener("click", () => fmbModal.open());
+const findMyBeer = document.querySelectorAll(".fmbContainer");
+findMyBeer.forEach((fmbProject) => {
+  fmbProject.addEventListener("click", () => fmbModal.open());
+});
 
 rlModal.setContent(rlContent);
-const recipeLookup = document.querySelector(".rlContainer");
-recipeLookup.addEventListener("click", () => rlModal.open());
+const recipeLookup = document.querySelectorAll(".rlContainer");
+recipeLookup.forEach((rlProject) => {
+  rlProject.addEventListener("click", () => rlModal.open());
+})
 
 shModal.setContent(shContent);
-const sanctuaryHelper = document.querySelector(".shContainer");
-sanctuaryHelper.addEventListener("click", () => shModal.open());
+const sanctuaryHelper = document.querySelectorAll(".shContainer");
+sanctuaryHelper.forEach((shProject) => {
+  shProject.addEventListener("click", () => shModal.open());
+});
 
 
 

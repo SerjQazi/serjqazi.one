@@ -12,17 +12,20 @@ nav {
         }
     li {
       font-family: $chakraPetch;
-      // font-weight: 900;
       letter-spacing: 3px;
       list-style: none;
       text-transform: uppercase;
+      padding: 10px 0;
       margin: 1vh 0.5vw;
-      @include fluid-font-size(1.7rem, 2.5rem);
+      @include fluid-font-size(1.6rem, 1.8rem);
       a {
         text-decoration: none;
         color: $lightBlue;
         border-bottom: 1px solid transparent;
+        transition: 0.5s ease-in-out;
         &:hover {
+          color: #fff;
+          text-shadow: 0 0 5px #fff;
           border-bottom: 1px solid $lightBlue;
         }
       }
@@ -32,7 +35,7 @@ nav {
         }
 
         @include min-width {
-          font-size: 2.5rem;
+          font-size: 1.8rem;
         }
     }
   }
@@ -71,12 +74,16 @@ nav {
       text-transform: uppercase;
       transform: translate(0%, -50%);
 
-      @include mq (600px) {
-        transform: translate(0%, 5%);
+      @include mq (812px) {
+        transform: translate(0%, -20%);
       }
 
       @include min-width {
         font-size: 15rem;
+      }
+
+      @media (max-height: 455px) {
+        font-size: 7rem;
       }
   }
 }
@@ -87,7 +94,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 2vh;
+  margin-bottom: 3vh;
 }
 
 .fontIconTwo {
@@ -98,6 +105,14 @@ nav {
   font-size: 3.5rem;
   min-width: 320px;
   margin-left: 30px;
+    @include mq (812px) {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      margin-top: 2vh ;
+      font-size: 2rem;
+    }
+
     @include mq (479px) {
       font-size: 3rem;
     }
@@ -144,6 +159,11 @@ h3 {
     @include min-width {
       font-size: 6rem;
     }
+
+    @media (max-height: 455px) {
+      font-size: 1.2rem;
+    } 
+  
 
     @include mq (479px){
       font-size: 1.4rem;

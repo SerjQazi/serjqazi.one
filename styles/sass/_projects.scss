@@ -3,20 +3,13 @@
 .projectHeader {
   display: flex;
   justify-content: center;
-  margin-bottom: 1vh;
+  margin-bottom: 6vh;
   text-transform: uppercase;
 
   @include mq (479px) {
       margin-bottom: 2vh;
     }
 }
-
-// .main-carousel{
-//   display: flex;
-//   justify-content: center;
-// }
-
-
 
 .carousel-cell {
   width: 90%;
@@ -36,9 +29,17 @@
 .rtContainer,
 .fmbContainer,
 .rlContainer,
-.shContainer{
+.shContainer {
   position: relative;
   width: 70%;
+
+  @include mq (455px) {
+    width: 60%;
+  }
+
+  @media (max-height: 455px) {
+    width: calc(100% / 4);
+  }
 }
 
 .projectTitle {
@@ -63,6 +64,8 @@
       left: 8px;
       font-size: 1.2rem;
     } 
+
+    
 }
 
 .is-selected {
@@ -117,6 +120,12 @@
   }
 }
 
+@media (max-height: 455px) {
+  .main-carousel {
+    display: none;
+  }
+} 
+
 .mobileView {
   display: none;
 
@@ -126,21 +135,38 @@
       bottom: 18px;
       right: 18px;
 
+      @media (max-height: 455px) {
+      bottom: -5px;
+      right: 52px;
     }
 
-  @include mq (479px) {
-    display: block;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-      video {
-        width: 90%;
-        margin: 10px;
-        
-      }
+    }
+
+    @include mq (479px) {
+      display: block;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        video {
+          width: 90%;
+          margin: 10px;
+          
+        }
+    }
+    @media (max-height: 455px) {
+      display: block;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        video {
+          width: 90%;
+          margin: 10px;
+          
+        }
+    }
   }
-}
 
 .projectContainer {
   position: relative;

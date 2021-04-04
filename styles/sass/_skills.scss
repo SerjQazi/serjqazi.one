@@ -17,11 +17,28 @@
       min-width: 100%;
     }
 
+    @media (max-width: 1024px),
+           (max-height: 1024px) {
+      display: flex;
+      justify-content: center;
+    }
+
+    
+
   ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+
+    @media (max-width: 1024px),
+           (max-height: 1024px) {
+      width: 70%;
+    }
+
+    @media (max-height: 455px) {
+      width: 100%;
+    }
       li {
         display: flex;
         flex-direction: column;
@@ -30,6 +47,16 @@
         padding: 10px;
         margin: 5px ;
         @include fluid-font-size(7rem, 10rem);
+
+        @include mq (455px) {
+          line-height: 1.2;
+        }
+
+        @media (max-height: 455px) {
+          font-size: 2rem ;
+          padding: 0;
+          line-height: 1.6;
+        }
         
           p {
             font-family: $josefinSlab;
