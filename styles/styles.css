@@ -1436,7 +1436,6 @@ h3 {
 
 @media (max-height: 455px) {
   .skills ul {
-    width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
