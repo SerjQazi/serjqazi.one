@@ -3,6 +3,7 @@
 .aboutHeader {
   display: flex;
   justify-content: center;
+  margin-bottom: 2vh;
   text-transform: uppercase;
 }
 
@@ -20,7 +21,7 @@
   
   .profileTxt {
     width: 70%;
-    padding: 3vh 3vw;
+    padding: 0 3vw 2vh;
     @include fluid-font-size-profile(1.8rem, 2.5rem);
     letter-spacing: 2.5px;
 

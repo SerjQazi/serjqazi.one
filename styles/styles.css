@@ -682,7 +682,7 @@ main {
 }
 
 section {
-  height: 98vh;
+  height: 96vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1045,6 +1045,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 2vh;
   text-transform: uppercase;
 }
 
@@ -1077,7 +1078,7 @@ h3 {
 
 .aboutSection .profileTxt {
   width: 70%;
-  padding: 3vh 3vw;
+  padding: 0 3vw 2vh;
   letter-spacing: 2.5px;
 }
 
