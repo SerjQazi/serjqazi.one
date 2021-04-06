@@ -682,7 +682,7 @@ main {
 }
 
 section {
-  height: 100vh;
+  height: 98vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1083,20 +1083,20 @@ h3 {
 
 .aboutSection .profileTxt {
   font-size: 1.8rem;
-  line-height: calc(1.8rem + 18px);
+  line-height: calc(1.8rem + 10px);
 }
 
 @media (min-width: 30rem) {
   .aboutSection .profileTxt {
     font-size: calc(1.8rem + 0.7 * ((100vw - 30rem) / 130));
-    line-height: calc(calc(1.8rem + 0.7 * ((100vw - 30rem) / 130)) + 18px);
+    line-height: calc(calc(1.8rem + 0.7 * ((100vw - 30rem) / 130)) + 10px);
   }
 }
 
 @media (min-width: 160rem) {
   .aboutSection .profileTxt {
     font-size: 2.5rem;
-    line-height: calc(2.5rem + 18px);
+    line-height: calc(2.5rem + 10px);
   }
 }
 
@@ -1430,7 +1430,7 @@ h3 {
 
 @media (max-width: 455px) {
   .skills ul {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -1669,7 +1669,8 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 12vh;
+  height: 10vh;
+  padding-bottom: 2vh;
 }
 
 .socialIcons ul li {
@@ -1696,7 +1697,7 @@ footer {
 
 @media (max-width: 455px) {
   .socialIcons ul li {
-    margin: 5px;
+    margin: 2px;
   }
 }
 
@@ -1721,6 +1722,7 @@ footer {
 
 .socialIcons ul li a i {
   font-size: 2.5rem;
+  line-height: 1.6;
 }
 
 @media (max-height: 455px) {
@@ -1742,18 +1744,12 @@ footer {
 .socialIcons ul li::before {
   font-family: fontAwesome;
   position: absolute;
-  top: -2px;
+  top: 5.8px;
   font-size: 2.5rem;
   height: 0;
   overflow: hidden;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-}
-
-@media (max-width: 1920px) {
-  .socialIcons ul li::before {
-    top: -1px;
-  }
 }
 
 @media (max-height: 455px) {
@@ -1786,7 +1782,7 @@ footer {
 }
 
 .socialIcons ul li:nth-child(4)::before {
-  content: '\f23a';
+  content: '\f274';
   color: #00ab6c;
   border-bottom: 2px solid #00ab6c;
 }

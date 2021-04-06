@@ -18,7 +18,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 12vh;
+    height: 10vh;
+    padding-bottom: 2vh;
 
     li {
       position: relative;
@@ -31,7 +32,7 @@ footer {
       cursor: pointer;
       transition: 0.5s ease-in-out;
       @include mq (455px) {
-        margin: 5px;
+        margin: 2px;
       }
       
       p {
@@ -48,6 +49,7 @@ footer {
         color: $lightBlue;
         i {
           font-size: 2.5rem;
+          line-height: 1.6;
           @media (max-height: 455px) {
             font-size: 1.6rem;
           }
@@ -70,15 +72,15 @@ footer {
 .socialIcons ul li::before {
   font-family: fontAwesome;
   position: absolute;
-  top: -2px;
+  top: 5.8px;
   font-size: 2.5rem;
   height: 0;
   overflow: hidden;
   transition: 0.5s ease-in-out;
 
-  @include mq (1920px) {
-    top: -1px;
-  }
+  // @include mq (1920px) {
+  //   top: -1px;
+  // }
 
   @media (max-height: 455px) {
     font-size: 1.6rem;
@@ -109,7 +111,7 @@ footer {
 }
 
 .socialIcons ul li:nth-child(4)::before {
-  content: '\f23a';
+  content: '\f274';
   color: #00ab6c;
   border-bottom: 2px solid #00ab6c;
 }
