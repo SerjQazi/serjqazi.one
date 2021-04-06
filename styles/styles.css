@@ -722,7 +722,7 @@ nav {
   width: 100%;
   margin: 0 auto;
   z-index: 1;
-  height: 10vh;
+  height: 11vh;
 }
 
 nav ul {
@@ -1436,8 +1436,9 @@ h3 {
 
 @media (max-height: 455px) {
   .skills ul {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
