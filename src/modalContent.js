@@ -35,7 +35,7 @@ const rtContent = `
     </li>
     
     <li class='buttonOneContainer'>
-      <a class='buttonOne' href="https://serjqazi.dev/robo-trivia">Live Link</a>
+      <a class='buttonOne' href="https://serjqazi.one/robo-trivia">Live Link</a>
     </li> 
   </div>
 
@@ -76,7 +76,7 @@ const fmbContent = `
     </li>
 
     <li class='buttonOneContainer'>
-      <a href="https://serjqazi.dev/find-my-beer">Live Link</a>
+      <a href="https://serjqazi.one/find-my-beer">Live Link</a>
     </li> 
   </div>
 
@@ -112,7 +112,7 @@ const rlContent = `
     </li>
 
     <li class='buttonOneContainer'>
-      <a href="https://serjqazi.dev/recipe-lookup">Live Link</a>
+      <a href="https://serjqazi.one/recipe-lookup">Live Link</a>
     </li> 
   </div>
 
